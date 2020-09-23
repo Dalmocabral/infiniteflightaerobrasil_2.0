@@ -1,0 +1,85 @@
+.a1-row {
+    margin-top: 50px;
+}
+
+
+.a1-row th {
+
+    background-color: rgb(211, 208, 208);
+    
+}
+
+.a1-row th {
+
+    padding: 2px 2px;
+}
+
+.a1-imagens {
+
+    float: left;
+    width: 60%;
+    margin: 0px 15px 10px 0;
+    
+}
+
+.promo-row-title {
+
+    font-size: 1.2rem;
+    letter-spacing: .083125rem;
+    color: #11172A;;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.promo-row-text {
+    
+    line-height: 1.4em;
+    margin-bottom: 25px;
+    color: #11172A;;
+}
+
+
+.b1-pilots table {
+      
+      width: 50% !important; /*Importante manter o !important rs */
+      margin: auto;
+      margin-top: 40px;
+  }
+
+  body {
+    background-color: #ebeff5;
+}
+
+#total-ordens {
+    background-color: #4cb4c7;
+}
+
+#ordem-entregues {
+    background-color: #7abecc;
+}
+
+#ordem-pedida {
+    background-color: #7cd1c0;
+}
+   
+.user-b1 {
+
+    margin-top: 30px;
+}
+
+.carousel-caption {
+
+    padding-bottom: 250px;
+    font-family: poppins;
+}
+
+.carousel-caption h3 {
+
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.carousel-caption  h1 span {
+
+    color: #edbb00;
+}

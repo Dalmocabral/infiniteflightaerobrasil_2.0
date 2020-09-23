@@ -1,0 +1,61 @@
+
+{% extends 'base.html' %}
+
+{% from 'bootstrap/form.html' import render_form %}
+{% block content %}
+<div class="container">
+  <div class="text-center">
+    <img src="{{ user.avatar(128) }}">     
+    <h1>{{ user.username }} {{ user.sobrenome}}</h1>
+    {% if va.0.0 > 3000 %}
+      <p><img src="../static/img/patente/CMM.png" alt="" width="120px"></p>    
+    {% elif va.0.0 > 2000 %}
+      <p><img src="../static/img/patente/CMD.png" alt="" width="120px"></p>
+    {% elif va.0.0 > 1000 %}
+      <p><img src="../static/img/patente/POF2.png" alt="" width="120px"></p>
+    {% elif va.0.0 > 500 %}
+      <p><img src="../static/img/patente/POF.png" alt="" width="120px"></p>
+    {% elif va.0.0 > 250 %}
+      <p><img src="../static/img/patente/COP2.png" alt="" width="120px"></p>
+      {% elif va.0.0 > 0 %}
+      <p><img src="../static/img/patente/COP.png" alt="" width="120px"></p>
+    
+    {% endif %}
+    <p><strong>Gametag:</strong> <small>{{ user.gametag}}</small></p>
+    <p><strong>IFCommunity:</strong> <small><a href="https://community.infiniteflight.com/u/{{user.ifcomunity}}/activity" target="_blank">@{{user.ifcomunity}}</a></small></p>
+    <p><strong>Sobre:</strong> <small>{{ user.sobremim}}</small></p>        
+  </div>      
+  <br>
+  <div>
+    <table class="table table-sm table-striped table-hover text-center">
+      <thead>
+        <tr class="table-active"></tr>>
+            <th>Saida</th>
+            <th>Chegada</th>
+            <th>Voo</th>
+            <th>Aeronave</th>
+            <th>Tempo</th>
+            <th>Data</th> 
+        </tr>        
+      </thead>
+      <tbody>
+          {% for log in log %}
+          <tr>
+              <td>{{log.saida}}</td>
+              <td>{{log.chegada}}</td>
+              <td>{{log.voo}}</td>
+              <td>{{log.aeronave}}</td>
+              <td>{{log.tempo}}</td>
+              <td>{{log.data_create.strftime('%d/%m/%Y')}}</td>              
+          </tr>
+          {% endfor %}
+      </tbody>
+
+  </table>
+
+  </div>
+
+        >
+</div>
+
+{% endblock %}

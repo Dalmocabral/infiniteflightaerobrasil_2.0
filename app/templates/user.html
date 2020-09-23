@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% from 'bootstrap/form.html' import render_form %}
+{% block content %}  
+<div class="container user-b1">
+    <div class="text-center">
+        <img src="{{ user.avatar(128) }}">
+        <h1>{{ user.username }} {{ user.sobrenome}}</h1>
+        <p>{{ user.email }}</p>
+        <h3><small class="text-muted">{{user.sobremim}}</small></h3>
+    </div>
+    <div class="text-center">
+        <div>
+            
+        <a class="btn btn-primary btn-sm brn-block" href="{{ url_for('logbook', id=user.id) }}">Registrar logbook</a>
+        <a class="btn btn-primary btn-sm brn-block" href="{{ url_for('logbook', id=user.id) }}">Editar Perfil</a>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <div class="col-sm">
+                <div class="card text-center text-white md=3" style="background-color:  #4cb4c7;">
+                    <div>
+                        <div  class="card-header">
+                            <h5>Total de Horas</h5>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">{{va.0.0}} Hs</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <div class="col-sm">
+                <div class="card text-center text-white md=3" style="background-color:  #7abecc;">                
+                    <div  class="card-header">
+                        <h5>Total de Voos</h5>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">{{ log | length }}</h3>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <div class="col-sm">
+                <div class="card text-center text-white md=3" style="background-color:  #7cd1c0;">
+                    <div>
+                        <div  class="card-header">
+                            <h5>Total de pontos </h5>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">{{user.pontos}}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <table class="table table-sm table-striped table-hover text-center">
+            <thead>
+                <tr class="table-active"></tr>>
+                <th>Saida</th>
+                <th>Chegada</th>
+                <th>Voo</th>
+                <th>Aeronave</th>
+                <th>Tempo</th>
+                <th>Data</th>
+                
+               </tr>>
+            </thead>
+            <tbody>
+                {% for log in log %}
+                <tr>
+                    <td>{{log.saida}}</td>
+                    <td>{{log.chegada}}</td>
+                    <td>{{log.voo}}</td>
+                    <td>{{log.aeronave}}</td>
+                    <td>{{log.tempo}}</td>
+                    <td>{{log.data_create.strftime('%d/%m/%Y')}}</td>
+                    
+                </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+    </div>
+
+</div>
+{% endblock %}

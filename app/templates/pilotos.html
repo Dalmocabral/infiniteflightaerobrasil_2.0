@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h1 class="text-center pilots">PILOTOS IFAB</h1>
+
+    <div class="table table-sm b1-pilots">
+        <table>
+            <thead>
+                <tr>
+                    <th>Registro</th>
+                    <th>Piloto</th>
+                    <th>Base</th>
+                    <th>Pais</th>
+                    <th>Pontos</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for users in users %}z
+                <tr>
+                    <td><strong>IFAB{{users.registro}}</strong></td>
+                    <td><a href="{{ url_for('unique', id=users.id) }}">{{ users.username }} {{users.sobrenome}}</a></td>
+                    <td>{{users.base}}</td>
+                    {% if users.pais == 'Brasil' %}
+                    <td><img src="../static/img/bandeiras/BR.png" alt=""></td>
+                    {% elif users.pais == 'Inglaterra' %}
+                    <td><img src="../static/img/bandeiras/GB.png" alt=""></td>
+                    {% endif %}                    
+                    <td>{{users.pontos}}</td>
+                    
+                    
+                </tr>                    
+            {% endfor %}  
+            </tbody>
+        </table>    
+    </div>
+</div>  
+
+    
+{% endblock %}

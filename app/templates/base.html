@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">   
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet"> 
+
+    {{ bootstrap.load_css() }}
+
+    <title>projeto</title>
+  </head>
+  <body>
+      {% include 'nav.html' %}      
+
+        {% block content %} {% endblock %}
+
+      </div>
+  
+      {{ bootstrap.load_js() }}
+      <script src="{{url_for('static', filename='js/script.js')}}"></script>
+  </body>
+</html>

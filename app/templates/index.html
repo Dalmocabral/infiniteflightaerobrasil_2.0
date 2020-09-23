@@ -1,0 +1,377 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="../static/img/slider/carusel_01.png"
+          alt="First slide">          
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../static/img/slider/carusel_02.png"
+          alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../static/img/slider/carusel_04.png"
+          alt="Third slide">
+      </div>      
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Comecando o conteudo do site em grids -->
+
+<div class="container">      
+      <!-- Coluna da esquerda -->
+    <div class="text-center">
+      <h1>
+        <div>
+          Grupo Virtual certificado pela
+          <strong>IFVARB</strong>
+        </div>
+      </h1>
+    </div>
+
+    <div class="row a1-row" >
+        <div class="col-sm-7">
+          <section id="content" class="two-column with-right-sidebar">
+            <article>           
+              <div class="text-center">
+                  <h3><span id="horas"></span>, bem vindo a IFAB </h3>        
+                    
+                  <p>
+                      Somos antes de tudo fanáticos pela aviação, respiramos AVGÁS e expiramos JET. Amigos que
+                      compartilham
+                      conhecimento, boas histórias e catrapos. O&nbsp; INFINITE FLIGHT AERO BRASIL foi
+                      criado no intuito de proporcionar melhores voos e
+                      boas amizades para seus integrantes. Estamos contentes com nossos membros e
+                      amigos acima de tudo, sempre mantendo o respeito e empatia com o próximo.
+                  </p>
+              </div>
+              <br>
+              <section>
+                <div>
+                  <div>
+                    <img src="../static/img/IFABD.png" alt="" class="a1-imagens">
+                  </div>
+                  <a href="http://">
+                    <div>
+                      <h3 class="promo-row-title">JUNTE-SE Á IFAB</h3>
+                    </div>
+                    <div class="promo-row-text mb-0 justify">
+                      <p>
+                        Venha participar do grupo que mais cresce na comunidade Brasileira.
+                        Estamos sempre procurando novos pilotos para ingressar e subir os céus do Infinite Flight.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <br>                
+                <div>
+                    <div class="text-center promo-row-title">
+                        <h3> PILOTOS DESTAQUES DO MÊS</h3>
+                    </div>
+                    <div>
+                        <h3 class="text-center"
+                            style="text-transform: uppercase;letter-spacing: 1px;font-weight: 600; color: #F2B01C; font-size: 17px">
+                            “QUEM SE DESTACA MERECE DESTAQUE”
+                        </h3>
+                        <p>
+                            O impossível só dura até alguém atingi-lo! A gratidão é uma forma singular de reconhecimento, e
+                            o reconhecimento é uma forma sincera de
+                            gratidão. Portanto, a <strong>IFAB</strong> reconhece os pilotos destaques do mês, seja pelo
+                            ranking de performance, seja pelo desempenho em grupo. Parabéns!</p>
+                    </div>
+                </div>
+            </article>
+          </section>
+        </div>
+        <!-- Coluna da direita -->
+        <div class="col-sm-5 " style="font-size: 12px;">
+            <div>
+              <table class="table table-sm table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="3">Novos Pilotos </th>
+                  </tr>
+                  <tr>                    
+                    <th scope="col">Registro</th>
+                    <th scope="col">Piloto</th>
+                    <th scope="col">Data</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for i in range(5) %}
+                  <tr>
+                    <td>IFAB-{{users[i].registro}}</td>
+                    <td>{{users[i].username}} <strong>{{users[i].sobrenome}}</strong></td>
+                    <td>{{users[i].data_create.strftime('%d/%m/%Y')}}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+            <hr>
+            <div>
+              <table class="table table-sm table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="5">LiveFlights </th>
+                  </tr>
+                  <tr>
+                    <th>Piloto</th>
+                    <th>Voo</th>
+                    <th>Aeronave</th>
+                    <th>Status</th>
+                    <th>Track</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for i in flight %}
+                        {% if i['DisplayName'] is not none %}
+                            {% if 'IFAB' in i['DisplayName'] %}
+                             
+                    <tr>
+                        <td>{{i["DisplayName"].strip(" ")}}</td>
+                        <td>{{i["CallSign"]}}</td>
+                        <td>
+                            {% if i["AircraftID"] == "33d26fc7-ae7d-4c5d-9e0d-d6cba93d4913" %}
+                            C-130J
+                            {% elif i["AircraftID"] == "8a62f1d0-bca9-494c-bc01-1fb8b7255f76" %}
+                            Spitfire Mk VIII
+                            {% elif i["AircraftID"] == "7bd8096f-8eae-47b9-8e1a-38dabd2c59c4" %}
+                            F-16C
+                            {% elif i["AircraftID"] == "24364e52-3788-487f-9f98-00f38b1f459c" %}
+                            CRJ-200
+                            {% elif i["AircraftID"] == "9759c19f-8f18-40f5-80d1-03a272f98a3b" %}
+                            B747-8
+                            {% elif i["AircraftID"] == "9759c19f-8f18-40f5-80d1-03a272f98a3b" %}
+                            B717-200
+                            {% elif i["AircraftID"] == "e59fa7b4-b708-4480-aebd-26659a4f312b" %}
+                            DC-10F
+                            {% elif i["AircraftID"] == "f60a537d-5f83-4b68-8f66-b5f76d1e1775" %}
+                            B737-800
+                            {% elif i["AircraftID"] == "6925c030-a868-49cc-adc8-7025537c51ca" %}
+                            B777-200F
+                            {% elif i["AircraftID"] == "e94ec915-3368-4bcc-bc78-2c5ad3cfbabb" %}
+                            BVC-25
+                            {% elif i["AircraftID"] == "8bafde46-7e6e-44c5-800f-917237c49d75" %}
+                            X-Cub
+                            {% elif i["AircraftID"] == "a266b67f-03e3-4f8c-a2bb-b57cfd4b12f3" %}
+                            A320-200
+                            {% elif i["AircraftID"] == "c82da702-ea61-4399-921c-34f35f3ca5c4" %}
+                            B747-200
+                            {% elif i["AircraftID"] == "dac4bb8e-6bb3-480a-a5a5-191d7d351e47" %}
+                            E170
+                            {% elif i["AircraftID"] == "2b1249c8-11d8-4fa6-9aae-a99eff451225" %}
+                            C-17 III
+                            {% elif i["AircraftID"] == "8f34680a-a4ad-4f21-91e9-3a932ab03ca4" %}
+                            CRJ-700
+                            {% elif i["AircraftID"] == "876b428a-3ee2-46cd-9d8c-2c59424dfcb5" %}
+                            AC-130
+                            {% elif i["AircraftID"] == "2c2f162e-a7d9-4ebd-baf4-859aed36165a" %}
+                            A319-100
+                            {% elif i["AircraftID"] == "b3907f6b-c8cf-427b-94fb-1f9365d990df" %}
+                            CRJ-1000
+                            {% elif i["AircraftID"] == "8290107b-d728-4fc3-b36e-0224c1780bac" %}
+                            B777-200LR
+                            {% elif i["AircraftID"] == "dd2f3f8e-db6e-4fd5-ae7d-af8b9289c755" %}
+                            E195
+                            {% elif i["AircraftID"] == "d7434d84-555a-4d9b-93a7-53c77cf846ea" %}
+                            A321-200
+                            {% elif i["AircraftID"] == "64568366-b72c-47bd-8bf6-6fdb81b683f9" %}
+                            B737-900
+                            {% elif i["AircraftID"] == "bec63a00-a483-4427-a076-0f76dba0ee97" %}
+                            B777-200ER
+                            {% elif i["AircraftID"] == "9769c825-0f89-4faf-abb1-9dd473321ede" %}
+                            P-38
+                            {% elif i["AircraftID"] == "ef677903-f8d3-414f-a190-233b2b855d46" %}
+                            C-172
+                            {% elif i["AircraftID"] == "3f17ca35-b384-4391-aa5e-5beececb0612" %}
+                            TBM-930
+                            {% elif i["AircraftID"] == "c1ae3647-f56a-4dc4-9007-cc8b1a2697a5" %}
+                            B787-8
+                            {% elif i["AircraftID"] == "f580ad00-b7c7-4813-9dbc-c4a8c655cc46" %}
+                            A330-200F
+                            {% elif i["AircraftID"] == "9bbe741a-6fbe-415b-9eb1-00d45083c7a4" %}
+                            F-14
+                            {% elif i["AircraftID"] == "2ec6f8cd-fdb9-464f-87c2-808f778fdb1d" %}
+                            B737-700
+                            {% elif i["AircraftID"] == "3828d120-d5b9-475b-b368-a94aad264b07" %}
+                            B767-300
+                            {% elif i["AircraftID"] == "81d9ccd4-9c03-493a-811e-8fad3e57bd05" %}
+                            A-10
+                            {% elif i["AircraftID"] == "898b1c59-399e-45d0-b57f-cc8400c3e2fc" %}
+                            B737-700 BBJ
+                            {% elif i["AircraftID"] == "3098345e-1152-4441-96ec-40a71179a24f" %}
+                            D8-Q400
+                            {% elif i["AircraftID"] == "0d49ce9e-446a-4d12-b651-6983afdeeb40" %}
+                            B747-SCA
+                            {% elif i["AircraftID"] == "230ec095-5e36-4637-ba2f-68831b31e891" %}
+                            A350-900
+                            {% elif i["AircraftID"] == "150fd3d1-1b06-431b-a889-628ae470d57b" %}
+                            Citation X
+                            {% elif i["AircraftID"] == "de510d3d-04f8-46e0-8d65-55b888f33129" %}
+                            B747-400
+                            {% elif i["AircraftID"] == "0c039044-1a57-48db-99c1-7570a6bf2b00" %}
+                            B787-9
+                            {% elif i["AircraftID"] == "849366e1-cb11-4d72-9034-78b11cd026b0" %}
+                            F-22
+                            {% elif i["AircraftID"] == "e258f6d4-4503-4dde-b25c-1fb9067061e2" %}
+                            B777-300ER
+                            {% elif i["AircraftID"] == "693c3fab-307d-4467-aa40-0a4d569841a9" %}
+                            DC-10
+                            {% elif i["AircraftID"] == "6af2c9f8-abd8-4872-a9bc-4e79fd84fe77" %}
+                            A330-300
+                            {% elif i["AircraftID"] == "61084cae-8aac-4da4-a7df-396ec6d9c870" %}
+                            B787-10
+                            {% elif i["AircraftID"] == "af055734-aaed-44ad-a2d0-5b9046f29d0d" %}
+                            E175
+                            {% elif i["AircraftID"] == "206884f9-38a8-4118-a920-a7dcbd166c47" %}
+                            C208
+                            {% elif i["AircraftID"] == "7de22dcf-91dd-4932-b225-533298873df2" %}
+                            E190
+                            {% elif i["AircraftID"] == "0a3edb21-d515-4619-8392-aef51b952ac9" %}
+                            F-18
+                            {% elif i["AircraftID"] == "b1e726b0-be58-4a9b-88e5-e40bc40a1f9a" %}
+                            MD-11
+                            {% elif i["AircraftID"] == "3ee45d20-1984-4d95-a753-3696e35cdf77" %}
+                            B747-SOFIA
+                            {% elif i["AircraftID"] == "e92bc6db-a9e6-4137-a93c-a7423715b799" %}
+                            SR22
+                            {% elif i["AircraftID"] == "958486b0-1ef4-4efd-bee0-ea94e96f6c96" %}
+                            CRJ-900
+                            {% elif i["AircraftID"] == "3f78766a-30c8-4d65-95ae-ebc2fb758aac" %}
+                            MD-11F
+                            {% elif i["AircraftID"] == "ed29f26b-774e-471e-a23a-ecb9b6f5da74" %}
+                            B757-200
+                            {% elif i["AircraftID"] == "982dd974-5be7-4369-90c6-bd92863632ba" %}
+                            A318-100
+                            {% elif i["AircraftID"] == "8b00fd70-d825-4c30-a52e-3a27a3a1a157" %}
+                            A340-600
+                            {% elif i["AircraftID"] == "e0e1900e-0e63-4700-b508-5e2efe120ce5" %}
+                            C-130J-30
+                            {% else %}
+                            A380-800
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if i["Altitude"] <= 4000 and i['Speed'] <= 140 %}
+                            Em solo
+                            {% elif i["Altitude"] > 4100 and i["VerticalSpeed"] > 600 %}
+                            Decolando
+                            {% elif i["Altitude"] > 15000 and i['Speed'] > 250 %}
+                            Em rota
+                            {% elif i["VerticalSpeed"] < -600 %}
+                            Pousando
+                            {% else %}
+                            Estável
+                            {% endif %}
+                        </td>
+                        <td><a href="https://liveflightapp.com/?f={{i['FlightID']}}&s=7e5dcd44-1fb5-49cc-bc2c-a9aab1f6a856"
+                                target="_blank">Track</a></td>
+                    </tr>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </tbody>
+              </table>
+            </div>
+            <hr>
+            <div>
+              <table class="table table-sm table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="4">Ultimos voos</th>
+                  </tr>
+                  <tr>
+                    <th scope="col">Saida</th>
+                    <th scope="col">Chegada</th>
+                    <th scope="col">Piloto</th>
+                    <th scope="col">Data</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for x in log %}
+                    {% for y in point %}                      
+                      {% if x.saida == y['Icao'] %}        
+                     
+                                                           
+                        <tr>
+                          <td> <img src="{{y['Bandeira']}}" alt="">{{x.saida}}</td>
+                          <td>{{x.chegada}}</td>
+                          <td>{{x.user.username}} {{x.user.sobrenome}}</td>
+                          <td>{{x.data_create.strftime('%d/%m/%Y')}}</td>                          
+                        </tr>
+                                     
+                      {% endif %}                      
+                    {% endfor %}
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+            <hr>
+            <div>
+              <table class="table table-sm table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="6">ATC Ativo Expert </th>
+                  </tr>
+                  <tr>
+                    <th>Aeroporto</th>
+                    <th>Pais</th>
+                    <th>ATIS</th>
+                    <th>GND</th>
+                    <th>TWR</th>
+                    <th>APP</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for atc in atc %}
+                  <tr>
+                    
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+   function verificaHora()
+{
+ 	stamp = new Date();
+ 	var sours;
+       var time;
+ 	hours = stamp.getHours();
+ 	
+ 	if (hours >= 18 && hours <24) {
+ 		time = " Boa Noite ";
+ 	}
+ 	
+ 	if (hours >= 12 && hours <18) {
+ 		time = " Boa Tarde ";
+ 	}
+ 	
+ 	if (hours >= 0 && hours <12) {
+ 		time = " Bom Dia ";
+ 	}
+	
+	document.getElementById('horas').innerHTML = time
+}
+
+verificaHora()
+  
+</script>
+
+
+    
+{% endblock %}
