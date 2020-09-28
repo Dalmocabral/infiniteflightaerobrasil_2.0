@@ -51,7 +51,7 @@ class Logbook(db.Model):
     chegada = db.Column(db.String(200))
     aeronave = db.Column(db.String(200))
     voo = db.Column(db.String(200))
-    tempo = db.Column(db.Float(), nullable=False) # Tempo total de horas de voo 
+    tempo = db.Column(db.Time, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     status = db.Column(db.String(200))    
     data_create = db.Column(db.DateTime, default=datetime.utcnow)

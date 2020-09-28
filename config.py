@@ -16,3 +16,10 @@ class Config(object):
     # Configuração Flask-Admin tema
     FLASK_ADMIN_SWATCH = 'Darkly'
     
+    MAIL_SENDER=''
+    MAIL_SERVER=''
+    MAIL_PORT=2525
+    MAIL_USERNAME=''
+    MAIL_PASSWORD=''
+    MAIL_USE_TLS=True
+    MAIL_USE_SSL=False

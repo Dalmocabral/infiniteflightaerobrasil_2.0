@@ -1,14 +1,19 @@
-from flask import Flask, flash, redirect, render_template, request, url_for 
-from flask_login import login_required, login_user, logout_user, current_user
-from werkzeug.security import check_password_hash, generate_password_hash
-
-from app import app, db
-from app.forms import LogbookForm, LoginForm, RegisterForm
-from app.models import User, Logbook
-from sqlalchemy.sql import func
+import datetime
+import json
 
 import requests
-import json
+from flask import flash, redirect, render_template, url_for
+from flask_login import current_user, login_required, login_user, logout_user
+from sqlalchemy.sql import func
+from werkzeug.security import check_password_hash, generate_password_hash
+from app.services.mail import send_email
+
+from app import app, db
+from app.forms import (ChangePasswordForm, ForgotPasswordForm, LogbookForm,
+                       LoginForm, ProfileForm, RegisterForm)
+from app.models import Logbook, User
+from app.tools import get_all_time
+
 
 def get_json(url):
     return json.loads(requests.get(url).text)
@@ -26,7 +31,7 @@ atc = get_json('http://infinite-flight-public-api.cloudapp.net/v1/GetATCFaciliti
 @app.route('/index')
 def index():    
     log = Logbook.query.order_by(Logbook.data_create.desc()).all()
-    users = User.query.order_by(User.data_create.desc()).all()
+    users = User.query.order_by(User.data_create.desc()).limit(5).all()
     return render_template('index.html', 
     users=users, 
     log=log, 
@@ -94,9 +99,86 @@ def login():
 @login_required
 def user(id):
     user = User.query.get(id)
-    va = db.session.query(func.sum(Logbook.tempo)).filter_by(user_id=id).all()  
+    flying_time = get_all_time(Logbook.query.filter_by(user_id=id).all())
     log = Logbook.query.filter_by(user_id=id).order_by(Logbook.data_create.desc()).all()
-    return render_template('user.html', user=user, log=log, va=va)
+    return render_template('user.html', user=user, log=log, flying_time=flying_time)
+
+
+@app.route("/recuperar-senha", methods=["GET", "POST"])
+@login_required
+def forgot_password():
+    form = ForgotPasswordForm()
+
+    if form.validate_on_submit():
+        user = User.query.filter_by(email=form.email.data)
+        if not user:
+            flash("usuário não encontrado", "danger")
+            return redirect(url_for(".forgot_password"))  
+
+        send_email(user.email, "recuperar senha", "forgot", user=user)
+
+    return render_template("forgot-password.html", form=form)
+
+@app.route("/user/profile", methods=["GET", "POST"])
+@login_required
+def profile():
+    form = ProfileForm()
+
+    if form.validate_on_submit():
+        current_user.email = form.email.data
+        current_user.idade = form.idade.data 
+        current_user.sobremim = form.sobremim.data
+        current_user.registro = form.registro.data
+        current_user.gametag = form.gametag.data
+        current_user.ifcomunity = form.ifcomunity.data
+        current_user.sobrenome =  form.sobrenome.data
+        current_user.username = form.username.data
+        current_user.base = form.base.data
+        current_user.pais = form.pais.data
+
+        db.session.add(current_user)
+        db.session.commit()
+        
+        flash("dados alterados com sucesso", "success")
+        return redirect(url_for(".profile"))
+
+    form.email.data = current_user.email
+    form.idade.data = current_user.idade
+    form.sobremim.data = current_user.sobremim
+    form.registro.data = current_user.registro
+    form.gametag.data = current_user.gametag
+    form.ifcomunity.data = current_user.ifcomunity
+    form.sobrenome.data = current_user.sobrenome
+    form.username.data = current_user.username
+    form.base.data = current_user.base
+    form.pais.data = current_user.pais
+
+    return render_template("user/profile/edit.html", form=form)
+
+@app.route("/user/profile/change-password", methods=["GET", "POST"])
+@login_required
+def change_password():
+    form = ChangePasswordForm()
+
+    if form.validate_on_submit():
+        if not check_password_hash(current_user.password, form.old_password.data):
+            flash("a senha antiga está incorreta.", "danger")
+            return redirect(url_for(".change_password"))
+               
+        if form.new_password.data != form.confirm_password.data:            
+            flash("a nova senha deve ser igual a confirmação de senha", "danger")
+            return redirect(url_for(".change_password"))
+
+        current_user.password = generate_password_hash(form.new_password.data)
+        db.session.add(current_user)
+        db.session.commit()
+
+        flash("dados alterados com com sucesso", "success")
+        return redirect(url_for(".change_password"))
+    
+    return render_template("user/profile/change_password.html", form=form)
+
+
 
 @app.route('/user/<int:id>/add-logbook/', methods=['GET', 'POST'])
 def logbook(id):
@@ -121,8 +203,9 @@ def logbook(id):
 @app.route('/top10')
 def top10():
     users = User.query.all()
-    horas = db.session.query(func.sum(Logbook.tempo)).all()
-    return render_template('top10.html', horas=horas, users=users)
+    horas = get_all_time(Logbook.query.all())
+    flying_bigger_then_15_hours = Logbook.query.filter_by(user_id=current_user.id).filter(Logbook.tempo > datetime.time(15)).count()
+    return render_template('top10.html', horas=horas, users=users, flying_bigger_then_15_hours=flying_bigger_then_15_hours)
 
 @app.route('/logout')
 @login_required

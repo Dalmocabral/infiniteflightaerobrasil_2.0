@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="row">
-    <div class="col">
+<div class="container mt-5">
+    <div class="row">
         <div class="col-sm">
             <div class="card text-center text-white md=3" style="background-color:  #4cb4c7;">
                 <div>
@@ -10,28 +10,27 @@
                         <h5>Horas de voo</h5>
                     </div>
                     <div class="card-body">
-                        <h3 class="card-title"></h3>
+                        <h3 class="card-title">
+                            {{ horas }}
+                        </h3>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="col">
+    
         <div class="col-sm">
             <div class="card text-center text-white md=3" style="background-color:  #7abecc;">                
                 <div  class="card-header">
                     <h5>Voos realizados</h5>
                 </div>
                 <div class="card-body">
-                    <h3 class="card-title"></h3>
+                    <h3 class="card-title">
+                        {{ flying_bigger_then_15_hours }}
+                    </h3>
                 </div>
                 
             </div>
         </div>
-    </div>
-
-    <div class="col">
         <div class="col-sm">
             <div class="card text-center text-white md=3" style="background-color:  #7cd1c0;">
                 <div>
@@ -59,7 +58,6 @@
             </div>
         </div>
     </div>
-</div>
-
+</div>    
 
 {% endblock %}
