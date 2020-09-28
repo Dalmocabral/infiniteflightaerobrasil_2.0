@@ -1,0 +1,6 @@
+Olá, {{ user.username }}
+
+Para recuperar a senha acesse o link abaixo:
+
+<!-- Deve colocar a url para recuperação de senha -->
+<a href="{{ url_for() }}"> recuperar senha </a>

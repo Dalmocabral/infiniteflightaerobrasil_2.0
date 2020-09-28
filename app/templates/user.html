@@ -13,7 +13,7 @@
         <div>
             
         <a class="btn btn-primary btn-sm brn-block" href="{{ url_for('logbook', id=user.id) }}">Registrar logbook</a>
-        <a class="btn btn-primary btn-sm brn-block" href="{{ url_for('logbook', id=user.id) }}">Editar Perfil</a>
+        <a class="btn btn-primary btn-sm brn-block" href="{{ url_for('profile' ) }}">Editar Perfil</a>
         </div>
     </div>
     <hr>
@@ -26,7 +26,7 @@
                             <h5>Total de Horas</h5>
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">{{va.0.0}} Hs</h3>
+                            <h3 class="card-title">{{flying_time}}</h3>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                     <td>{{log.chegada}}</td>
                     <td>{{log.voo}}</td>
                     <td>{{log.aeronave}}</td>
-                    <td>{{log.tempo}}</td>
+                    <td>{{log.tempo | format_to_hours }}</td>
                     <td>{{log.data_create.strftime('%d/%m/%Y')}}</td>
                     
                 </tr>

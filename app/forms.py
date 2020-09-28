@@ -4,27 +4,7 @@ from wtforms.validators import DataRequired, Email, Length, EqualTo, ValidationE
 from app.models import User
 
 
-class LoginForm(FlaskForm):
-    email = StringField('E-mail', validators=[Email()])
-    password = PasswordField('Password', validators=[Length(3, 9, 'O campo dever conter 3 á 9 caracters' )])
-    remember_me = BooleanField('Remember Me')
-    submit = SubmitField('Entrar')
-
-class RegisterForm(FlaskForm):
-
-    username = StringField('Nome',  validators=[DataRequired('O campo e obrigatório')])
-    sobrenome = StringField('Sobrenome', validators=[DataRequired()])
-    email = StringField('E-mail', validators=[Email()])
-    password = PasswordField('Password', validators=[Length(3, 9, 'O campo dever conter 3 á 9 caracters' )]) 
-    password2 = PasswordField('Repete a Senha', validators=[DataRequired(), EqualTo('password')])
-    gametag = StringField('Gametag', validators=[DataRequired()])
-    registro = StringField('Registro', validators=[DataRequired()])
-    ifcomunity = StringField('IFComunity', validators=[DataRequired()])
-    sobremim = TextAreaField('Sobre mim', validators=[DataRequired()]) 
-    base = StringField('Base', validators=[DataRequired()])
-    idade = StringField('Data de Nascimento', validators=[DataRequired()])
-    grau =  SelectField('Grau', choices=[('3', '3'), ('4', '4'), ('5', '5')])
-    pais = pais = SelectField('País de origem', choices=[
+paises = SelectField('País de origem', choices=[
         ("África do Sul", "África do Sul"),
         ("Albânia", "Albânia"),
         ("Alemanha", "Alemanha"),
@@ -201,6 +181,56 @@ class RegisterForm(FlaskForm):
         ("Zâmbia", "Zâmbia"),
         ("Zimbábue", "Zimbábue")])
 
+
+class ProfileForm(FlaskForm):
+    username = StringField('Nome',  validators=[DataRequired('O campo e obrigatório')])
+    sobrenome = StringField('Sobrenome', validators=[DataRequired()])
+    email = StringField('E-mail', validators=[Email()])
+    gametag = StringField('Gametag', validators=[DataRequired()])
+    registro = StringField('Registro', validators=[DataRequired()])
+    ifcomunity = StringField('IFComunity', validators=[DataRequired()])
+    sobremim = TextAreaField('Sobre mim', validators=[DataRequired()]) 
+    base = StringField('Base', validators=[DataRequired()])
+    idade = StringField('Data de Nascimento', validators=[DataRequired()])
+    grau =  SelectField('Grau', choices=[('3', '3'), ('4', '4'), ('5', '5')])
+    pais = paises
+    submit = SubmitField("salvar")
+
+
+class ForgotPasswordForm(FlaskForm):
+    email = StringField('E-mail', validators=[Email()])
+    submit = SubmitField("Recuperar")
+
+
+class ChangePasswordForm(FlaskForm):
+    old_password = PasswordField('Senha antiga')
+    new_password = PasswordField('Nova Senha', validators=[Length(3, 9, 'O campo dever conter 3 á 9 caracters' )])
+    confirm_password = PasswordField('Confirmar Nova Senha', validators=[Length(3, 9, 'O campo dever conter 3 á 9 caracters' )])
+    submit = SubmitField("salvar")
+
+
+class LoginForm(FlaskForm):
+    email = StringField('E-mail', validators=[Email()])
+    password = PasswordField('Password', validators=[Length(3, 9, 'O campo dever conter 3 á 9 caracters' )])
+    remember_me = BooleanField('Remember Me')
+    submit = SubmitField('Entrar')
+
+
+class RegisterForm(FlaskForm):
+    username = StringField('Nome',  validators=[DataRequired('O campo e obrigatório')])
+    sobrenome = StringField('Sobrenome', validators=[DataRequired()])
+    email = StringField('E-mail', validators=[Email()])
+    password = PasswordField('Password', validators=[Length(3, 9, 'O campo dever conter 3 á 9 caracters' )]) 
+    password2 = PasswordField('Repete a Senha', validators=[DataRequired(), EqualTo('password')])
+    gametag = StringField('Gametag', validators=[DataRequired()])
+    registro = StringField('Registro', validators=[DataRequired()])
+    ifcomunity = StringField('IFComunity', validators=[DataRequired()])
+    sobremim = TextAreaField('Sobre mim', validators=[DataRequired()]) 
+    base = StringField('Base', validators=[DataRequired()])
+    idade = StringField('Data de Nascimento', validators=[DataRequired()])
+    grau =  SelectField('Grau', choices=[('3', '3'), ('4', '4'), ('5', '5')])
+    pais = paises
+
     submit = SubmitField('Registrar')    
 
     def validate_email(self, email):
@@ -224,3 +254,4 @@ class LogbookForm(FlaskForm):
     voo = StringField('Voo', validators=[DataRequired()])
     tempo = StringField('Total Time',  validators=[DataRequired('O campo e obrigatório')])    
     submit = SubmitField('Enviar')
+

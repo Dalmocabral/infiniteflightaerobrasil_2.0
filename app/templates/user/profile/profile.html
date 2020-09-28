@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% from "bootstrap/form.html" import render_form %}
+
+
+{% block content %}
+    <div class="col-sm">
+        {% include 'componentes/notifications.html' %}
+        <div class="card card-body">
+            {{ render_form(form) }}
+        </div>
+    </div>
+{% endblock %}
