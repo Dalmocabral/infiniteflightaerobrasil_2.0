@@ -203,8 +203,9 @@ def logbook(id):
 @app.route('/top10')
 def top10():
     users_top_10 = db.session.execute("SELECT u.username, sum(l.tempo) as tempo FROM logbooks as l JOIN users as u ON l.user_id = u.id group by u.id limit 10")
+    top_flying_done = db.session.execute("SELECT u.username, l.status, count(l.status) as approved_status  FROM logbooks as l JOIN users as u ON l.user_id = u.id group by u.id")
     users = User.query.all()
-    return render_template('top10.html', users_top_10=users_top_10, users=users)
+    return render_template('top10.html', users_top_10=users_top_10, users=users, top_flying_done=top_flying_done)
 
 @app.route('/logout')
 @login_required
