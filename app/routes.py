@@ -47,7 +47,7 @@ def pilotos():
 
 @app.route('/user_profile/<int:id>') 
 def unique(id):
-    va = db.session.query(func.sum(Logbook.tempo)).filter_by(user_id=id).all()    
+    va = get_all_time(Logbook.query.filter_by(user_id=id).all())
     user= User.query.get(id)    
     log = Logbook.query.filter_by(user_id=id).order_by(Logbook.data_create.desc()).all()    
     return render_template('user_profile.html', user=user, log=log, va=va)
@@ -202,10 +202,9 @@ def logbook(id):
 
 @app.route('/top10')
 def top10():
+    users_top_10 = db.session.execute("SELECT u.username, sum(l.tempo) as tempo FROM logbooks as l JOIN users as u ON l.user_id = u.id group by u.id limit 10")
     users = User.query.all()
-    horas = get_all_time(Logbook.query.all())
-    flying_bigger_then_15_hours = Logbook.query.filter_by(user_id=current_user.id).filter(Logbook.tempo > datetime.time(15)).count()
-    return render_template('top10.html', horas=horas, users=users, flying_bigger_then_15_hours=flying_bigger_then_15_hours)
+    return render_template('top10.html', users_top_10=users_top_10, users=users)
 
 @app.route('/logout')
 @login_required
