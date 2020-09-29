@@ -7,17 +7,17 @@
   <div class="text-center">
     <img src="{{ user.avatar(128) }}">     
     <h1>{{ user.username }} {{ user.sobrenome}}</h1>
-    {% if va.0.0 > 3000 %}
+    {% if va > "3000" %}
       <p><img src="../static/img/patente/CMM.png" alt="" width="120px"></p>    
-    {% elif va.0.0 > 2000 %}
+    {% elif va > "2000" %}
       <p><img src="../static/img/patente/CMD.png" alt="" width="120px"></p>
-    {% elif va.0.0 > 1000 %}
+    {% elif va > "1000" %}
       <p><img src="../static/img/patente/POF2.png" alt="" width="120px"></p>
-    {% elif va.0.0 > 500 %}
+    {% elif va > "500" %}
       <p><img src="../static/img/patente/POF.png" alt="" width="120px"></p>
-    {% elif va.0.0 > 250 %}
+    {% elif va > "250" %}
       <p><img src="../static/img/patente/COP2.png" alt="" width="120px"></p>
-      {% elif va.0.0 > 0 %}
+      {% elif va  %}
       <p><img src="../static/img/patente/COP.png" alt="" width="120px"></p>
     
     {% endif %}

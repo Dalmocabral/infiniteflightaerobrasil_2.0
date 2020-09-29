@@ -1,5 +1,5 @@
-from datetime import timedelta, time
-from flask_babel import format_timedelta
+from datetime import timedelta
+
 
 def get_all_time(logbooks):
     counter = timedelta()
@@ -10,4 +10,4 @@ def get_all_time(logbooks):
             seconds=int(logbook.tempo.second),
         )
         counter += t
-    return format_timedelta(counter)
+    return counter

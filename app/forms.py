@@ -1,6 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import BooleanField, PasswordField, StringField, SubmitField, TextAreaField, SelectField
 from wtforms.validators import DataRequired, Email, Length, EqualTo, ValidationError, email
+from wtforms.fields.html5 import TimeField
 from app.models import User
 
 
@@ -252,6 +253,6 @@ class LogbookForm(FlaskForm):
        
     ])
     voo = StringField('Voo', validators=[DataRequired()])
-    tempo = StringField('Total Time',  validators=[DataRequired('O campo e obrigatório')])    
+    tempo = TimeField('Tempo Total',  validators=[DataRequired('O campo e obrigatório')])    
     submit = SubmitField('Enviar')
 
