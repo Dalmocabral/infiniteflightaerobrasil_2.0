@@ -1,4 +1,5 @@
 from datetime import timedelta
+import arrow
 
 
 def get_all_time(logbooks):
@@ -10,4 +11,6 @@ def get_all_time(logbooks):
             seconds=int(logbook.tempo.second),
         )
         counter += t
-    return counter
+    time =  (counter.total_seconds() / 3600)
+
+    return '{0:02.0f}:{1:02.0f}:00'.format(*divmod(float(time) * 60, 60))

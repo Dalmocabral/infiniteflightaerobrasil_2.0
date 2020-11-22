@@ -17,7 +17,7 @@
                 </tr>
             </thead>
             <tbody>
-            {% for users in users %}z
+            {% for users in users %}
                 <tr>
                     <td><strong>IFAB{{users.registro}}</strong></td>
                     <td><a href="{{ url_for('unique', id=users.id) }}">{{ users.username }} {{users.sobrenome}}</a></td>
@@ -27,8 +27,7 @@
                     {% elif users.pais == 'Inglaterra' %}
                     <td><img src="../static/img/bandeiras/GB.png" alt=""></td>
                     {% endif %}                    
-                    <td>{{users.pontos}}</td>
-                    
+                    <td>{{users.pontos}}</td>          
                     
                 </tr>                    
             {% endfor %}  

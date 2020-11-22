@@ -84,7 +84,7 @@
                     <td>{{log.chegada}}</td>
                     <td>{{log.voo}}</td>
                     <td>{{log.aeronave}}</td>
-                    <td>{{log.tempo | format_to_hours }}</td>
+                    <td>{{log.tempo.strftime('%H:%M:%S') }}</td>
                     <td>{{log.data_create.strftime('%d/%m/%Y')}}</td>
                     
                 </tr>

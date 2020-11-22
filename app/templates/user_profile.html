@@ -6,21 +6,7 @@
 <div class="container">
   <div class="text-center">
     <img src="{{ user.avatar(128) }}">     
-    <h1>{{ user.username }} {{ user.sobrenome}}</h1>
-    {% if va > "3000" %}
-      <p><img src="../static/img/patente/CMM.png" alt="" width="120px"></p>    
-    {% elif va > "2000" %}
-      <p><img src="../static/img/patente/CMD.png" alt="" width="120px"></p>
-    {% elif va > "1000" %}
-      <p><img src="../static/img/patente/POF2.png" alt="" width="120px"></p>
-    {% elif va > "500" %}
-      <p><img src="../static/img/patente/POF.png" alt="" width="120px"></p>
-    {% elif va > "250" %}
-      <p><img src="../static/img/patente/COP2.png" alt="" width="120px"></p>
-      {% elif va  %}
-      <p><img src="../static/img/patente/COP.png" alt="" width="120px"></p>
-    
-    {% endif %}
+    <h1>{{ user.username }} {{ user.sobrenome}}</h1>    
     <p><strong>Gametag:</strong> <small>{{ user.gametag}}</small></p>
     <p><strong>IFCommunity:</strong> <small><a href="https://community.infiniteflight.com/u/{{user.ifcomunity}}/activity" target="_blank">@{{user.ifcomunity}}</a></small></p>
     <p><strong>Sobre:</strong> <small>{{ user.sobremim}}</small></p>        
@@ -55,7 +41,7 @@
 
   </div>
 
-        >
+        
 </div>
 
 {% endblock %}
