@@ -13,19 +13,9 @@ from app.forms import (ChangePasswordForm, ForgotPasswordForm, LogbookForm,
                        LoginForm, ProfileForm, RegisterForm)
 from app.models import Logbook, User
 from app.tools import get_all_time
+from app.get_user import get_flight
 
 
-def get_json(url):
-    return json.loads(requests.get(url).text)
-
-
-flight = get_json('http://infinite-flight-public-api.cloudapp.net/v1/Flights.aspx?'
-            'apikey=78879b1d-3ba3-47de-8e50-162f35dc6e04&sessionid=7e5dcd44-1fb5-49cc-bc2c-a9aab1f6a856')
-
-points = get_json('https://raw.githubusercontent.com/Dalmocabral/infinteflightaerobrasil_atc/master/exceljson.json')
-
-atc = get_json('http://infinite-flight-public-api.cloudapp.net/v1/GetATCFacilities.aspx?'
-                'apikey=78879b1d-3ba3-47de-8e50-162f35dc6e04&sessionid=7e5dcd44-1fb5-49cc-bc2c-a9aab1f6a856')
 
 @app.route('/')
 @app.route('/index')
@@ -35,9 +25,7 @@ def index():
     return render_template('index.html', 
     users=users, 
     log=log, 
-    flight=flight, 
-    point=points, 
-    atc=atc )
+    flight=get_flight())
 
 @app.route('/pilotos')
 def pilotos():
