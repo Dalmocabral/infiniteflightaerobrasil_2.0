@@ -12,7 +12,7 @@ from app import app, db
 from app.forms import (ChangePasswordForm, ForgotPasswordForm, LogbookForm,
                        LoginForm, ProfileForm, RegisterForm)
 from app.models import Logbook, User
-from app.tools import get_all_time
+from app.tools import get_all_time, get_all_time2
 from app.get_user import get_flight, get_ifatc, get_icao
 
 
@@ -38,7 +38,7 @@ def pilotos():
 
 @app.route('/user_profile/<int:id>') 
 def unique(id):
-    va = get_all_time(Logbook.query.filter_by(user_id=id).all())
+    va = get_all_time2(Logbook.query.filter_by(user_id=id).all())
     user= User.query.get(id)    
     log = Logbook.query.filter_by(user_id=id).order_by(Logbook.data_create.desc()).all()    
     return render_template('user_profile.html', user=user, log=log, va=va)

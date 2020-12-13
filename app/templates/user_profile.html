@@ -4,18 +4,34 @@
 {% from 'bootstrap/form.html' import render_form %}
 {% block content %}
 <div class="container">
+  <br>
+  <br>
   <div class="text-center">
     <img src="{{ user.avatar(128) }}">     
-    <h1>{{ user.username }} {{ user.sobrenome}}</h1>    
+    <h1>{{ user.username }} {{ user.sobrenome}}</h1>
+    {% if va > 3000 %}
+      <img src="../static/img/patente/CMM.png" alt=""  width="250px">
+    {% elif va > 2000 %}
+      <img src="../static/img/patente/CMD.png" alt="" width="250px">
+    {% elif va > 1000 %}
+      <img src="../static/img/patente/POF2.png" alt="" width="250px">
+    {% elif va > 500 %}
+      <img src="../static/img/patente/POF.png" alt=""  width="250px">
+    {% elif va > 250 %}
+      <img src="../static/img/patente/COP2.png" alt="" width="250px">
+    {% else %}
+      <img src="../static/img/patente/COP.png" alt="" width="250px">
+    {% endif %}
+    <br>
     <p><strong>Gametag:</strong> <small>{{ user.gametag}}</small></p>
     <p><strong>IFCommunity:</strong> <small><a href="https://community.infiniteflight.com/u/{{user.ifcomunity}}/activity" target="_blank">@{{user.ifcomunity}}</a></small></p>
     <p><strong>Sobre:</strong> <small>{{ user.sobremim}}</small></p>        
   </div>      
   <br>
   <div>
-    <table class="table table-sm table-striped table-hover text-center">
+    <table class="table table-sm table-striped table-responsive text-center ">
       <thead>
-        <tr class="table-active"></tr>>
+        <tr class="table-active"></tr>
             <th>Saida</th>
             <th>Chegada</th>
             <th>Voo</th>
@@ -36,12 +52,8 @@
           </tr>
           {% endfor %}
       </tbody>
-
-  </table>
-
-  </div>
-
-        
+    </table>
+  </div>        
 </div>
 
 {% endblock %}
