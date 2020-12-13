@@ -26,17 +26,17 @@
     <div class="col-sm-7">
       <section id="content" class="two-column with-right-sidebar">
         <article>
-          <div class="text-center">
-            <h3><span id="horas"></span>, bem vindo a IFAB </h3>
+          <div>
+            <h3><span id="horas"></span> bem vindo a IFAB </h3>
 
-            <p>
+            <font style="vertical-align: inherit;">
               Somos antes de tudo fanáticos pela aviação, respiramos AVGÁS e expiramos JET. Amigos que
               compartilham
               conhecimento, boas histórias e catrapos. O&nbsp; INFINITE FLIGHT AERO BRASIL foi
               criado no intuito de proporcionar melhores voos e
               boas amizades para seus integrantes. Estamos contentes com nossos membros e
               amigos acima de tudo, sempre mantendo o respeito e empatia com o próximo.
-            </p>
+            </font>
           </div>
           <br>
           <section>
@@ -166,19 +166,39 @@
             </tr>
             <tr>
               <th>Aeroporto</th>
-              <th>Pais</th>
-              <th>ATIS</th>
-              <th>GND</th>
-              <th>TWR</th>
-              <th>APP</th>
+              <th>Frequência</th>
+              <th>Pais</th>              
             </tr>
           </thead>
           <tbody>
-            {% for atc in atc %}
-            <tr>
-
-            </tr>
-            {% endfor %}
+            {% for api in atc['result'] %}
+                        {% for fixo in fixo %}
+                        {% if api['airportName'] == fixo['Icao'] %}
+                        <tr>
+                            <td><a href="http://skyvector.com/airport/{{ api['Name'] }}">{{ api["airportName"] }}</a>
+                            </td>
+                            <td>
+                                {% if api['type'] == 0 %}
+                                ATIS
+                                {% elif api['type'] == 1 %}
+                                GND
+                                {% elif api['type'] == 5 %}
+                                DEP
+                                {% elif api['type'] == 4 %}
+                                APP
+                                {% elif api['type'] == 7 %}
+                                TWR
+                                {% elif api['type'] == 6 %}
+                                FIR
+                                {% endif %}
+                            </td>
+                            <td>
+                                <img src="{{fixo['Bandeira']}}" alt=""> {{ fixo['Pais']}}
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        {% endfor %}
           </tbody>
         </table>
       </div>
@@ -193,15 +213,15 @@
     hours = stamp.getHours();
 
     if (hours >= 18 && hours < 24) {
-      time = " Boa Noite ";
+      time = " Boa Noite, ";
     }
 
     if (hours >= 12 && hours < 18) {
-      time = " Boa Tarde ";
+      time = " Boa Tarde, ";
     }
 
     if (hours >= 0 && hours < 12) {
-      time = " Bom Dia ";
+      time = " Bom Dia, ";
     }
 
     document.getElementById('horas').innerHTML = time

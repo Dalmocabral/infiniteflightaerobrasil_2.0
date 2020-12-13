@@ -13,7 +13,8 @@ from app.forms import (ChangePasswordForm, ForgotPasswordForm, LogbookForm,
                        LoginForm, ProfileForm, RegisterForm)
 from app.models import Logbook, User
 from app.tools import get_all_time
-from app.get_user import get_flight
+from app.get_user import get_flight, get_ifatc, get_icao
+
 
 
 
@@ -25,7 +26,9 @@ def index():
     return render_template('index.html', 
     users=users, 
     log=log, 
-    flight=get_flight())
+    flight=get_flight(),
+    atc=get_ifatc(),
+    fixo=get_icao())
 
 @app.route('/pilotos')
 def pilotos():

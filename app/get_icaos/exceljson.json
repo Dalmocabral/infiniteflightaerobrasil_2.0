@@ -1,0 +1,4146 @@
+[
+    {
+        "Icao": "FNCT",
+        "Pais": "\u00a0Angola",
+        "Latitude": -12.493639,
+        "Longitude": 13.490028,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Flag_of_Angola.svg/22px-Flag_of_Angola.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "WAAA",
+        "Pais": "\u00a0Indon\u00e9sia",
+        "Latitude": -5.061667,
+        "Longitude": 119.554167,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/22px-Flag_of_Indonesia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "WAHI",
+        "Pais": "\u00a0Indon\u00e9sia",
+        "Latitude": -7.907459,
+        "Longitude": 110.05448,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/22px-Flag_of_Indonesia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "WALL",
+        "Pais": "\u00a0Indon\u00e9sia",
+        "Latitude": -1.268333,
+        "Longitude": 116.894444,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/22px-Flag_of_Indonesia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "WAMM",
+        "Pais": "\u00a0Indon\u00e9sia",
+        "Latitude": 1.549167,
+        "Longitude": 124.926389,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/22px-Flag_of_Indonesia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "WARR",
+        "Pais": "\u00a0Indon\u00e9sia",
+        "Latitude": -7.379722,
+        "Longitude": 112.786944,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/22px-Flag_of_Indonesia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "WIMM",
+        "Pais": "\u00a0Indon\u00e9sia",
+        "Latitude": 3.642222,
+        "Longitude": 98.885278,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/22px-Flag_of_Indonesia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "WIPP",
+        "Pais": "\u00a0Indon\u00e9sia",
+        "Latitude": -2.900278,
+        "Longitude": 104.7,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/22px-Flag_of_Indonesia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "DIAP",
+        "Pais": "Abidjan",
+        "Latitude": 5.2575,
+        "Longitude": -3.929444,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_C%C3%B4te_d%27Ivoire.svg/40px-Flag_of_C%C3%B4te_d%27Ivoire.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "FACT",
+        "Pais": "\u00c1frica do Sul",
+        "Latitude": -33.969444,
+        "Longitude": 18.597222,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/22px-Flag_of_South_Africa.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "FAOR",
+        "Pais": "\u00c1frica do Sul",
+        "Latitude": -26.139167,
+        "Longitude": 28.246111,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/22px-Flag_of_South_Africa.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "FATO",
+        "Pais": "\u00c1frica do Sul",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/22px-Flag_of_South_Africa.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EDDL",
+        "Pais": "Alemanha",
+        "Latitude": 51.289444,
+        "Longitude": 6.766667,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/22px-Flag_of_Germany.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EDDT",
+        "Pais": "Alemanha",
+        "Latitude": 52.559722,
+        "Longitude": 13.287778,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/22px-Flag_of_Germany.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EDDM",
+        "Pais": "Alemanha",
+        "Latitude": 48353889.0,
+        "Longitude": 11786111.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/22px-Flag_of_Germany.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EDDF",
+        "Pais": "Alemanha",
+        "Latitude": 50.043333,
+        "Longitude": 8.575,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/22px-Flag_of_Germany.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EDDB",
+        "Pais": "Alemanha",
+        "Latitude": 52378611.0,
+        "Longitude": 13520556.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/22px-Flag_of_Germany.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EDLP",
+        "Pais": "Alemanha",
+        "Latitude": 51615278.0,
+        "Longitude": 8617222.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/22px-Flag_of_Germany.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EDDH",
+        "Pais": "Alemanha",
+        "Latitude": 51615278.0,
+        "Longitude": 8617222.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/22px-Flag_of_Germany.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EDDS",
+        "Pais": "Alemanha",
+        "Latitude": 48.69,
+        "Longitude": 9.221944,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/22px-Flag_of_Germany.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EDFH",
+        "Pais": "Alemanha",
+        "Latitude": 49947222.0,
+        "Longitude": 7269444.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/22px-Flag_of_Germany.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "FNLU",
+        "Pais": "Angola",
+        "Latitude": -8.858333,
+        "Longitude": 13.231111,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Flag_of_Angola.svg/22px-Flag_of_Angola.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "FYWH",
+        "Pais": "Angola",
+        "Latitude": -22.486667,
+        "Longitude": 17.4625,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Flag_of_Angola.svg/22px-Flag_of_Angola.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "TAPA",
+        "Pais": "Antigua e Barbuda",
+        "Latitude": 17.136667,
+        "Longitude": -61.793056,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Flag_of_Antigua_and_Barbuda.svg/22px-Flag_of_Antigua_and_Barbuda.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "TNCM",
+        "Pais": "Antilhas Holandesas",
+        "Latitude": 18.040833,
+        "Longitude": -63.109444,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_Netherlands_Antilles_%281986%E2%80%932010%29.svg/22px-Flag_of_the_Netherlands_Antilles_%281986%E2%80%932010%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "TNCC",
+        "Pais": "Antilhas Holandesas",
+        "Latitude": 12188889.0,
+        "Longitude": -68959722.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_Netherlands_Antilles_%281986%E2%80%932010%29.svg/22px-Flag_of_the_Netherlands_Antilles_%281986%E2%80%932010%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "TNCB",
+        "Pais": "Antilhas Holandesas",
+        "Latitude": 12.131111,
+        "Longitude": -68.285,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_Netherlands_Antilles_%281986%E2%80%932010%29.svg/22px-Flag_of_the_Netherlands_Antilles_%281986%E2%80%932010%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "TNCC ",
+        "Pais": "Antilhas Holandesas",
+        "Latitude": 12188889.0,
+        "Longitude": -68959722.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_Netherlands_Antilles_%281986%E2%80%932010%29.svg/22px-Flag_of_the_Netherlands_Antilles_%281986%E2%80%932010%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "OEJN",
+        "Pais": "Ar\u00e1bia Saudita",
+        "Latitude": 21.679444,
+        "Longitude": 39.156667,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/22px-Flag_of_Saudi_Arabia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "OEMA",
+        "Pais": "Ar\u00e1bia Saudita",
+        "Latitude": 24.553333,
+        "Longitude": 39.705,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/22px-Flag_of_Saudi_Arabia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "OERK",
+        "Pais": "Ar\u00e1bia Saudita",
+        "Latitude": 24.957778,
+        "Longitude": 46.698889,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/22px-Flag_of_Saudi_Arabia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "DAAG",
+        "Pais": "Arg\u00e9lia",
+        "Latitude": 36.691014,
+        "Longitude": 3.215408,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/22px-Flag_of_Algeria.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SAEZ",
+        "Pais": "Argentina",
+        "Latitude": -34.822222,
+        "Longitude": -58.535833,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/22px-Flag_of_Argentina.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SAVC",
+        "Pais": "Argentina",
+        "Latitude": -45.79,
+        "Longitude": -67.468611,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/22px-Flag_of_Argentina.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "TNCA",
+        "Pais": "Aruba",
+        "Latitude": 12501389.0,
+        "Longitude": -70015278.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Aruba.svg/22px-Flag_of_Aruba.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "YMML",
+        "Pais": "Austr\u00e1lia",
+        "Latitude": -37.673333,
+        "Longitude": 144.843333,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/22px-Flag_of_Australia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "YPAD",
+        "Pais": "Austr\u00e1lia",
+        "Latitude": -34.945,
+        "Longitude": 138.530556,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/22px-Flag_of_Australia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "YSSY",
+        "Pais": "Austr\u00e1lia",
+        "Latitude": -33.946111,
+        "Longitude": 151.177222,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/22px-Flag_of_Australia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "YPPH",
+        "Pais": "Austr\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/22px-Flag_of_Australia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "YPDN",
+        "Pais": "Austr\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/22px-Flag_of_Australia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "YBBN",
+        "Pais": "Austr\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/22px-Flag_of_Australia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "YMLT",
+        "Pais": "Austr\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/22px-Flag_of_Australia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "YBCG",
+        "Pais": "Austr\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/22px-Flag_of_Australia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "YCFS",
+        "Pais": "Austr\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/22px-Flag_of_Australia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "YSSY ",
+        "Pais": "Austr\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/22px-Flag_of_Australia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "YBCS ",
+        "Pais": "Austr\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/22px-Flag_of_Australia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "YBSU",
+        "Pais": "Austr\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/22px-Flag_of_Australia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "YMHB",
+        "Pais": "Austr\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/22px-Flag_of_Australia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "YWLM ",
+        "Pais": "Austr\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/22px-Flag_of_Australia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LOWW",
+        "Pais": "\u00c1ustria",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/22px-Flag_of_Austria.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LOWI",
+        "Pais": "\u00c1ustria",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/22px-Flag_of_Austria.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LOWS",
+        "Pais": "\u00c1ustria",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/22px-Flag_of_Austria.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "UBBB",
+        "Pais": "Azerbaij\u00e3o",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Azerbaijan.svg/22px-Flag_of_Azerbaijan.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "UBBG",
+        "Pais": "Azerbaij\u00e3o",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Azerbaijan.svg/22px-Flag_of_Azerbaijan.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MYNN",
+        "Pais": "Bahamas",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Bahamas_Flag.svg/22px-Bahamas_Flag.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MYGF",
+        "Pais": "Bahamas",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Bahamas_Flag.svg/22px-Bahamas_Flag.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "TBPB",
+        "Pais": "Barbados",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Flag_of_Barbados.svg/22px-Flag_of_Barbados.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "OBBI",
+        "Pais": "Bar\u00e9m",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Bahrain.svg/22px-Flag_of_Bahrain.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EBBR",
+        "Pais": "B\u00e9lgica",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Belgium_%28civil%29.svg/22px-Flag_of_Belgium_%28civil%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EBCI",
+        "Pais": "B\u00e9lgica",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Belgium_%28civil%29.svg/22px-Flag_of_Belgium_%28civil%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "UMMS",
+        "Pais": "Bielo-R\u00fassia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Flag_of_Belarus.svg/22px-Flag_of_Belarus.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VYYY",
+        "Pais": "Birm\u00e2nia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Flag_of_Myanmar.svg/22px-Flag_of_Myanmar.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SLVR",
+        "Pais": "Bol\u00edvia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/22px-Flag_of_Bolivia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LQMO",
+        "Pais": "B\u00f3snia e Herzegovina",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/22px-Flag_of_Bosnia_and_Herzegovina.svg.png",
+        "": "]"
+    },
+    {
+        "Icao": "LQSA",
+        "Pais": "B\u00f3snia e Herzegovina",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/22px-Flag_of_Bosnia_and_Herzegovina.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "FBSK",
+        "Pais": "Botswana",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_Botswana.svg/22px-Flag_of_Botswana.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SBGL",
+        "Pais": "Brasil",
+        "Latitude": -22.81,
+        "Longitude": -43.250556,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SBRJ",
+        "Pais": "Brasil",
+        "Latitude": -22.91,
+        "Longitude": -43.1625,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SBGR",
+        "Pais": "Brasil",
+        "Latitude": -23.435556,
+        "Longitude": -46.473056,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SBSP",
+        "Pais": "Brasil",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SBRF",
+        "Pais": "Brasil",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SBCF",
+        "Pais": "Brasil",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SBBR",
+        "Pais": "Brasil",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SBFZ",
+        "Pais": "Brasil",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SBPO",
+        "Pais": "Brasil",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SBKP",
+        "Pais": "Brasil",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SBPA",
+        "Pais": "Brasil",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SBEG",
+        "Pais": "Brasil",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SBSV",
+        "Pais": "Brasil",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SBJA",
+        "Pais": "Brasil",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SBJV",
+        "Pais": "Brasil",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SBNF",
+        "Pais": "Brasil",
+        "Latitude": -26878611.0,
+        "Longitude": -48650833.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SBFL",
+        "Pais": "Brasil",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LBSF",
+        "Pais": "Bulg\u00e1ria",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/22px-Flag_of_Bulgaria.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LBBG",
+        "Pais": "Bulg\u00e1ria\u00a0",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/22px-Flag_of_Bulgaria.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "GVAC",
+        "Pais": "Cabo Verde",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Flag_of_Cape_Verde.svg/22px-Flag_of_Cape_Verde.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VDPP",
+        "Pais": "Camboja",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_Cambodia.svg/22px-Flag_of_Cambodia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VDSR",
+        "Pais": "Camboja",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_Cambodia.svg/22px-Flag_of_Cambodia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYBW",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYOO",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYTZ",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYVR",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYWG",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYXU",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYHZ",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYMM",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYOW",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYQR",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYYC",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYYT",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYYZ",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYEG",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYHZ ",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYUL",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYVR ",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "CYZF ",
+        "Pais": "Canad\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/22px-Flag_of_Canada_%28Pantone%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "OTHH",
+        "Pais": "Catar",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Qatar.svg/22px-Flag_of_Qatar.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "UAAA",
+        "Pais": "Cazaquist\u00e3o",
+        "Latitude": 43355278.0,
+        "Longitude": 77044722.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kazakhstan.svg/22px-Flag_of_Kazakhstan.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "UTTT",
+        "Pais": "Cazaquist\u00e3o",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kazakhstan.svg/22px-Flag_of_Kazakhstan.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SCCI",
+        "Pais": "Chile",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/22px-Flag_of_Chile.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SCCF",
+        "Pais": "Chile",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/22px-Flag_of_Chile.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SCDA",
+        "Pais": "Chile",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/22px-Flag_of_Chile.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SCEL",
+        "Pais": "Chile",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/22px-Flag_of_Chile.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SCFA",
+        "Pais": "Chile",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/22px-Flag_of_Chile.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SCIE",
+        "Pais": "Chile",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/22px-Flag_of_Chile.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SCTE",
+        "Pais": "Chile",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/22px-Flag_of_Chile.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VHHX",
+        "Pais": "China",
+        "Latitude": 22328611.0,
+        "Longitude": 114194167.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZGGG",
+        "Pais": "China",
+        "Latitude": 23.3925,
+        "Longitude": 113.298889,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZBAA",
+        "Pais": "China",
+        "Latitude": 40.0725,
+        "Longitude": 116.5975,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZBAD",
+        "Pais": "China",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZSPD",
+        "Pais": "China",
+        "Latitude": 31143333.0,
+        "Longitude": 121805278.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZSWX",
+        "Pais": "China",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZSSS",
+        "Pais": "China",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZYTL",
+        "Pais": "China",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZSQD",
+        "Pais": "China",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZYTX",
+        "Pais": "China",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZJHK",
+        "Pais": "China",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZGNN",
+        "Pais": "China",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZBBB",
+        "Pais": "China",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZBNY",
+        "Pais": "China",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZJYX ",
+        "Pais": "China",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZLDH",
+        "Pais": "China",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZUCK",
+        "Pais": "China",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZYTL ",
+        "Pais": "China",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZUNZ",
+        "Pais": "China",
+        "Latitude": 29.303333,
+        "Longitude": 94.335278,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ZUUU",
+        "Pais": "China",
+        "Latitude": 30.578333,
+        "Longitude": 103.946944,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/22px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LCLK",
+        "Pais": "Chipre",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Cyprus.svg/22px-Flag_of_Cyprus.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LCRA",
+        "Pais": "Chipre",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Cyprus.svg/22px-Flag_of_Cyprus.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SKBO",
+        "Pais": "Col\u00f4mbia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/22px-Flag_of_Colombia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SKRG",
+        "Pais": "Col\u00f4mbia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/22px-Flag_of_Colombia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SKCL",
+        "Pais": "Col\u00f4mbia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/22px-Flag_of_Colombia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SKCG",
+        "Pais": "Col\u00f4mbia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/22px-Flag_of_Colombia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SKRH",
+        "Pais": "Col\u00f4mbia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/22px-Flag_of_Colombia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RKSI",
+        "Pais": "Coreia do Sul",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/22px-Flag_of_South_Korea.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RKPC",
+        "Pais": "Coreia do Sul",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/22px-Flag_of_South_Korea.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RKPK",
+        "Pais": "Coreia do Sul",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/22px-Flag_of_South_Korea.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RKTN",
+        "Pais": "Cor\u00e9ia do Sul",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/22px-Flag_of_South_Korea.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MROC",
+        "Pais": "Costa Rica",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Costa_Rica.svg/22px-Flag_of_Costa_Rica.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LDDU",
+        "Pais": "Cro\u00e1cia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/22px-Flag_of_Croatia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MUHA",
+        "Pais": "Cuba",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Cuba.svg/22px-Flag_of_Cuba.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EKCH",
+        "Pais": "Dinamarca",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/22px-Flag_of_Denmark.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "HECA",
+        "Pais": "Egito",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/22px-Flag_of_Egypt.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MSLP",
+        "Pais": "El Salvador",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Flag_of_El_Salvador.svg/20px-Flag_of_El_Salvador.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "OMDW",
+        "Pais": "Emirados \u00c1rabes Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/22px-Flag_of_the_United_Arab_Emirates.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "OMDB",
+        "Pais": "Emirados \u00c1rabes Unidos",
+        "Latitude": 25.252778,
+        "Longitude": 55.364444,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/22px-Flag_of_the_United_Arab_Emirates.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "OMAA",
+        "Pais": "Emirados \u00c1rabes Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/22px-Flag_of_the_United_Arab_Emirates.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LEBL",
+        "Pais": "Espanha",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/22px-Flag_of_Spain.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "GCLP",
+        "Pais": "Espanha",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/22px-Flag_of_Spain.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LEBG",
+        "Pais": "Espanha",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/22px-Flag_of_Spain.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LEPA",
+        "Pais": "Espanha",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/22px-Flag_of_Spain.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LEPP",
+        "Pais": "Espanha",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/22px-Flag_of_Spain.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LEMD",
+        "Pais": "Espanha",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/22px-Flag_of_Spain.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LEMG",
+        "Pais": "Espanha",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/22px-Flag_of_Spain.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LEVC",
+        "Pais": "Espanha",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/22px-Flag_of_Spain.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KDTW",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KEWR",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KLIT",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KMEM",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KDCA",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KBOS",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KMSP",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KLAX",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KSFO",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KMDW",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KIAH",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KHOU",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KDFW",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KATL",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KBDL",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KBFI",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KJFK",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KOMA",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KONT",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KORD",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KPHX",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KSTL",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "PHNL",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KMIA",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KSLC",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KSEA",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KBUF",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KDEN",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KIAD",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KMCI",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KMCO",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KISP",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KLGB",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KRDU",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KSNA",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "PHJR",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "PHKO",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "PHLI",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "PHMK",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "PHNY",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KMSN",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KRFD",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KDSM",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KAGC",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KCMH",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KFCM",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KFAR",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KSEE",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KVNY",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "PADQ",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KPHL",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KCLT",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KFLL",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KLGA",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KBNA",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KRIC",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KGRB",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KLEX",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KACK",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KDXR",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KHPN",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KMHT",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KORH",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KPVD",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KTTN",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KICT",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KMFR",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KOAK",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KROW",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KSAF",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KSJC",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "PHOG",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KABQ",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KBOI",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KLAS",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KRNO",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KCOS",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KCVS",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KDMA",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KHIF",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KLSV",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KNUC",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KRIV",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KSUU",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KTCM",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KASE",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KMDT",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KPDX",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KPNE",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KSAT",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "PAFA",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "PANC",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KBTV",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KGRR",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KIND",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KPWM",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KAPA",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KBWI ",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KFWA",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KILG",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KPHN",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KSAN",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KBZN",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KRSW",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KTPA",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KBWI",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KCYS",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KGCC",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KRAP",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KSMF",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KSTS",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KMSY",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KEYW",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KFXE",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KSRQ",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KAPF",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KFMY",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KLAL",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KOPF",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "KORL",
+        "Pais": "Estados Unidos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "HAAB",
+        "Pais": "Eti\u00f3pia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Flag_of_Ethiopia.svg/22px-Flag_of_Ethiopia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RPLL",
+        "Pais": "Filipinas",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/22px-Flag_of_the_Philippines.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RPLC",
+        "Pais": "Filipinas",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/22px-Flag_of_the_Philippines.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RPMD",
+        "Pais": "Filipinas",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/22px-Flag_of_the_Philippines.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RPMY",
+        "Pais": "Filipinas",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/22px-Flag_of_the_Philippines.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RPMZ",
+        "Pais": "Filipinas",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/22px-Flag_of_the_Philippines.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RPVM",
+        "Pais": "Filipinas",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/22px-Flag_of_the_Philippines.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RPVP",
+        "Pais": "Filipinas",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/22px-Flag_of_the_Philippines.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RPLC\u00a0",
+        "Pais": "Filipinas",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/22px-Flag_of_the_Philippines.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RPMY\u00a0",
+        "Pais": "Filipinas",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/22px-Flag_of_the_Philippines.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RPMZ\u00a0",
+        "Pais": "Filipinas",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/22px-Flag_of_the_Philippines.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RPVP\u00a0",
+        "Pais": "Filipinas",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/22px-Flag_of_the_Philippines.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EFHK",
+        "Pais": "Finl\u00e2ndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Finland.svg/22px-Flag_of_Finland.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EFOU",
+        "Pais": "Finl\u00e2ndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Finland.svg/22px-Flag_of_Finland.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LFLL",
+        "Pais": "Fran\u00e7a",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/22px-Flag_of_France.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "TFFF",
+        "Pais": "Fran\u00e7a",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/22px-Flag_of_France.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "NTAA",
+        "Pais": "Fran\u00e7a",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/22px-Flag_of_France.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "NTTB",
+        "Pais": "Fran\u00e7a",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/22px-Flag_of_France.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LFSB",
+        "Pais": "Fran\u00e7a",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/22px-Flag_of_France.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LFOB",
+        "Pais": "Fran\u00e7a",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/22px-Flag_of_France.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LFPO",
+        "Pais": "Fran\u00e7a",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/22px-Flag_of_France.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LFBM",
+        "Pais": "Fran\u00e7a",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/22px-Flag_of_France.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LFSB\u00a0",
+        "Pais": "Fran\u00e7a",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/22px-Flag_of_France.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LFPG",
+        "Pais": "Fran\u00e7a",
+        "Latitude": 49.01,
+        "Longitude": 2.548611,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/22px-Flag_of_France.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "DGAA",
+        "Pais": "Gana",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/20px-Flag_of_Ghana.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LXGB",
+        "Pais": "Gibraltar",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Flag_of_Gibraltar.svg/22px-Flag_of_Gibraltar.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LGAV",
+        "Pais": "Gr\u00e9cia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/22px-Flag_of_Greece.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LGIR",
+        "Pais": "Gr\u00e9cia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/22px-Flag_of_Greece.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LGSR",
+        "Pais": "Gr\u00e9cia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/22px-Flag_of_Greece.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "TFFR",
+        "Pais": "Guadalupe",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Unofficial_flag_of_Guadeloupe_%28local%29.svg/20px-Unofficial_flag_of_Guadeloupe_%28local%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EHEH",
+        "Pais": "Holanda",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/22px-Flag_of_the_Netherlands.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VHHH",
+        "Pais": "Hong Kong",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/22px-Flag_of_Hong_Kong.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LHBP",
+        "Pais": "Hungria",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Flag_of_Hungary.svg/22px-Flag_of_Hungary.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGYP",
+        "Pais": "Ilhas Malvinas",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_Falkland_Islands.svg/20px-Flag_of_the_Falkland_Islands.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "TISX",
+        "Pais": "Ilhas Virgens Americanas",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Flag_of_the_United_States_Virgin_Islands.svg/20px-Flag_of_the_United_States_Virgin_Islands.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VIDP",
+        "Pais": "\u00cdndia",
+        "Latitude": 28568611.0,
+        "Longitude": 77112222.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/22px-Flag_of_India.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VABB",
+        "Pais": "\u00cdndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/22px-Flag_of_India.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VAAH",
+        "Pais": "\u00cdndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/22px-Flag_of_India.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VEBN",
+        "Pais": "\u00cdndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/22px-Flag_of_India.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VECC",
+        "Pais": "\u00cdndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/22px-Flag_of_India.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VEGT",
+        "Pais": "\u00cdndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/22px-Flag_of_India.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VOBL",
+        "Pais": "\u00cdndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/22px-Flag_of_India.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VOGO",
+        "Pais": "\u00cdndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/22px-Flag_of_India.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VOHS",
+        "Pais": "\u00cdndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/22px-Flag_of_India.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VOMM",
+        "Pais": "\u00cdndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/22px-Flag_of_India.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VIJP",
+        "Pais": "\u00cdndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/22px-Flag_of_India.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VOMD",
+        "Pais": "\u00cdndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/22px-Flag_of_India.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VOPB",
+        "Pais": "\u00cdndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/22px-Flag_of_India.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VOCI",
+        "Pais": "\u00cdndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/22px-Flag_of_India.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VOTV",
+        "Pais": "\u00cdndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/22px-Flag_of_India.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VIDN",
+        "Pais": "\u00cdndia",
+        "Latitude": 30189722.0,
+        "Longitude": 78180278.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/22px-Flag_of_India.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "WADD",
+        "Pais": "Indon\u00e9sia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/22px-Flag_of_Indonesia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "WIII",
+        "Pais": "Indon\u00e9sia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/22px-Flag_of_Indonesia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "OIMM",
+        "Pais": "Ir\u00e3",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Iran.svg/22px-Flag_of_Iran.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "OIIE",
+        "Pais": "Ir\u00e3",
+        "Latitude": 35.416111,
+        "Longitude": 51.15222,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Iran.svg/22px-Flag_of_Iran.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "OIII",
+        "Pais": "Ir\u00e3",
+        "Latitude": 35689167.0,
+        "Longitude": 51313611.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Iran.svg/22px-Flag_of_Iran.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ORER",
+        "Pais": "Iraque",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Iraq.svg/22px-Flag_of_Iraq.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ORBI",
+        "Pais": "Iraque",
+        "Latitude": 33.2625,
+        "Longitude": 44.234444,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Iraq.svg/22px-Flag_of_Iraq.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EIDW",
+        "Pais": "Irlanda",
+        "Latitude": 53.421389,
+        "Longitude": -6.27,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/22px-Flag_of_Ireland.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EICK",
+        "Pais": "Irlanda",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/22px-Flag_of_Ireland.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EINN",
+        "Pais": "Irlanda",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/22px-Flag_of_Ireland.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "BIKF",
+        "Pais": "Isl\u00e2ndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Iceland.svg/22px-Flag_of_Iceland.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LLBG",
+        "Pais": "Israel",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/22px-Flag_of_Israel.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LIRQ",
+        "Pais": "It\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/22px-Flag_of_Italy.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LICC",
+        "Pais": "It\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/22px-Flag_of_Italy.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LICJ",
+        "Pais": "It\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/22px-Flag_of_Italy.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LIEO",
+        "Pais": "It\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/22px-Flag_of_Italy.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LIRF",
+        "Pais": "It\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/22px-Flag_of_Italy.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LIPE",
+        "Pais": "It\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/22px-Flag_of_Italy.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LIRN",
+        "Pais": "It\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/22px-Flag_of_Italy.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LIMC",
+        "Pais": "It\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/22px-Flag_of_Italy.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LIME",
+        "Pais": "It\u00e1lia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/22px-Flag_of_Italy.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LIPZ",
+        "Pais": "It\u00e1lia\u00a0",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/22px-Flag_of_Italy.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MKJS",
+        "Pais": "Jamaica",
+        "Latitude": 18503611.0,
+        "Longitude": -77913333.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Jamaica.svg/22px-Flag_of_Jamaica.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RJAA",
+        "Pais": "Jap\u00e3o",
+        "Latitude": 35.765278,
+        "Longitude": 140.385556,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/22px-Flag_of_Japan.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RJCC",
+        "Pais": "Jap\u00e3o",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/22px-Flag_of_Japan.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RJFF",
+        "Pais": "Jap\u00e3o",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/22px-Flag_of_Japan.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RJFM",
+        "Pais": "Jap\u00e3o",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/22px-Flag_of_Japan.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RJGG",
+        "Pais": "Jap\u00e3o",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/22px-Flag_of_Japan.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RJOO",
+        "Pais": "Jap\u00e3o",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/22px-Flag_of_Japan.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RJTT",
+        "Pais": "Jap\u00e3o",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/22px-Flag_of_Japan.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ROAH",
+        "Pais": "Jap\u00e3o",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/22px-Flag_of_Japan.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "OJAI",
+        "Pais": "Jord\u00e2nia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Jordan.svg/22px-Flag_of_Jordan.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "OKBK",
+        "Pais": "Kuwait",
+        "Latitude": 29.226667,
+        "Longitude": 47.98,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Flag_of_Kuwait.svg/22px-Flag_of_Kuwait.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EVRA",
+        "Pais": "Let\u00f4nia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Latvia.svg/22px-Flag_of_Latvia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "OLBA",
+        "Pais": "L\u00edbano",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Lebanon.svg/22px-Flag_of_Lebanon.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VMMC",
+        "Pais": "Macau",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Flag_of_Macau.svg/22px-Flag_of_Macau.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "FMMI",
+        "Pais": "Madagascar",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Madagascar.svg/20px-Flag_of_Madagascar.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "WSSS",
+        "Pais": "Mal\u00e1sia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Flag_of_Malaysia.svg/22px-Flag_of_Malaysia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "WMKK",
+        "Pais": "Mal\u00e1sia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Flag_of_Malaysia.svg/22px-Flag_of_Malaysia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "WBKK",
+        "Pais": "Mal\u00e1sia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Flag_of_Malaysia.svg/22px-Flag_of_Malaysia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "WMKP",
+        "Pais": "Mal\u00e1sia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Flag_of_Malaysia.svg/22px-Flag_of_Malaysia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "WBGG",
+        "Pais": "Mal\u00e1sia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Flag_of_Malaysia.svg/22px-Flag_of_Malaysia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "WMKJ",
+        "Pais": "Mal\u00e1sia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Flag_of_Malaysia.svg/22px-Flag_of_Malaysia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VRMG",
+        "Pais": "Maldivas",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Maldives.svg/22px-Flag_of_Maldives.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VRMM",
+        "Pais": "Maldivas",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Maldives.svg/22px-Flag_of_Maldives.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LMML",
+        "Pais": "Malta",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Malta.svg/22px-Flag_of_Malta.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "GMMN",
+        "Pais": "Marrocos",
+        "Latitude": 33367222.0,
+        "Longitude": -7589722.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/22px-Flag_of_Morocco.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MMGL",
+        "Pais": "M\u00e9xico",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/22px-Flag_of_Mexico.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MMMY",
+        "Pais": "M\u00e9xico",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/22px-Flag_of_Mexico.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MMTJ",
+        "Pais": "M\u00e9xico",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/22px-Flag_of_Mexico.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MMUN",
+        "Pais": "M\u00e9xico",
+        "Latitude": 21.036667,
+        "Longitude": -86.876944,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/22px-Flag_of_Mexico.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MMMX",
+        "Pais": "M\u00e9xico",
+        "Latitude": 19.436111,
+        "Longitude": -99.071944,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/22px-Flag_of_Mexico.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MMCL",
+        "Pais": "M\u00e9xico",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/22px-Flag_of_Mexico.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MMHO",
+        "Pais": "M\u00e9xico",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/22px-Flag_of_Mexico.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MMSD",
+        "Pais": "M\u00e9xico",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/22px-Flag_of_Mexico.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MMCU",
+        "Pais": "M\u00e9xico",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/22px-Flag_of_Mexico.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MMPR",
+        "Pais": "M\u00e9xico",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/22px-Flag_of_Mexico.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "FQMA",
+        "Pais": "Mo\u00e7ambique",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Flag_of_Mozambique.svg/22px-Flag_of_Mozambique.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VNLK",
+        "Pais": "Nepal",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_Nepal.svg/15px-Flag_of_Nepal.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VNKT",
+        "Pais": "Nepal",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_Nepal.svg/15px-Flag_of_Nepal.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "DRRN",
+        "Pais": "N\u00edger",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Flag_of_Niger_%283-2%29.svg/22px-Flag_of_Niger_%283-2%29.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "DNMM",
+        "Pais": "Nig\u00e9ria",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_Nigeria.svg/20px-Flag_of_Nigeria.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ENGM",
+        "Pais": "Noruega",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/22px-Flag_of_Norway.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ENZV",
+        "Pais": "Noruega",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/22px-Flag_of_Norway.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ENTC",
+        "Pais": "Noruega",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/22px-Flag_of_Norway.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ENBO",
+        "Pais": "Noruega",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/22px-Flag_of_Norway.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ENBR",
+        "Pais": "Noruega",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/22px-Flag_of_Norway.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "NZQN",
+        "Pais": "Nova Zel\u00e2ndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/22px-Flag_of_New_Zealand.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "NZWN",
+        "Pais": "Nova Zel\u00e2ndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/22px-Flag_of_New_Zealand.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "NZNS",
+        "Pais": "Nova Zel\u00e2ndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/22px-Flag_of_New_Zealand.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "NZAA",
+        "Pais": "Nova Zel\u00e2ndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/22px-Flag_of_New_Zealand.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "OOSA",
+        "Pais": "Om\u00e3",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_Oman_%28CIA_Factbook_2004%29.png/22px-Flag_of_Oman_%28CIA_Factbook_2004%29.png",
+        "": ""
+    },
+    {
+        "Icao": "OOMS",
+        "Pais": "Om\u00e3",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_Oman_%28CIA_Factbook_2004%29.png/22px-Flag_of_Oman_%28CIA_Factbook_2004%29.png",
+        "": ""
+    },
+    {
+        "Icao": "EHAM",
+        "Pais": "Pa\u00edses Baixos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/22px-Flag_of_the_Netherlands.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EHRD",
+        "Pais": "Pa\u00edses Baixos",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/22px-Flag_of_the_Netherlands.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MPTO",
+        "Pais": "Panam\u00e1",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_Panama.svg/20px-Flag_of_Panama.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "OPKC",
+        "Pais": "Paquist\u00e3o",
+        "Latitude": 24.906667,
+        "Longitude": 67.160833,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/22px-Flag_of_Pakistan.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "OPIS",
+        "Pais": "Paquist\u00e3o",
+        "Latitude": 33.549083,
+        "Longitude": 72.82565,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/22px-Flag_of_Pakistan.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LTBA",
+        "Pais": "Peru",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/22px-Flag_of_Peru.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SPJC",
+        "Pais": "Peru",
+        "Latitude": -12.021944,
+        "Longitude": -77.114444,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/22px-Flag_of_Peru.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SPZO",
+        "Pais": "Peru",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/22px-Flag_of_Peru.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EPWA",
+        "Pais": "Pol\u00f4nia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/22px-Flag_of_Poland.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EPPO",
+        "Pais": "Pol\u00f4nia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/22px-Flag_of_Poland.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "TJSJ",
+        "Pais": "Porto Rico",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Flag_of_Puerto_Rico.svg/20px-Flag_of_Puerto_Rico.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LPPR",
+        "Pais": "Portugal",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/22px-Flag_of_Portugal.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LPFR",
+        "Pais": "Portugal",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/22px-Flag_of_Portugal.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LPMA",
+        "Pais": "Portugal",
+        "Latitude": 32694167.0,
+        "Longitude": -16778056.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/22px-Flag_of_Portugal.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LPPT",
+        "Pais": "Portugal",
+        "Latitude": 38779444.0,
+        "Longitude": -9136111.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/22px-Flag_of_Portugal.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "HKJK",
+        "Pais": "Qu\u00eania",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Kenya.svg/22px-Flag_of_Kenya.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGCC",
+        "Pais": "Reino Unido",
+        "Latitude": 53.353889,
+        "Longitude": -2.275,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGGW",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGNT",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGNX",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGPH",
+        "Pais": "Reino Unido",
+        "Latitude": 55.95,
+        "Longitude": -3.3725,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGLL",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGAA",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGBB",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGGD",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGPK",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGHH",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGMC",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGNM",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGBN",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGKK",
+        "Pais": "Reino Unido",
+        "Latitude": 51.148056,
+        "Longitude": -0.190278,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGPF",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGSS",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGLL ",
+        "Pais": "Reino Unido",
+        "Latitude": 51.4775,
+        "Longitude": -0.461389,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGDM",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGDR",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGOV",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGQL",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGQS",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGUL",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGVN",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGXC",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGXU",
+        "Pais": "Reino Unido",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGLC",
+        "Pais": "Reino Unido",
+        "Latitude": 51505278.0,
+        "Longitude": "0.055278",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "EGNS",
+        "Pais": "Reino Unido",
+        "Latitude": 54.083333,
+        "Longitude": -4.623889,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/22px-Flag_of_the_United_Kingdom.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "FZAA",
+        "Pais": "Rep\u00fablica Democr\u00e1tica do Congo",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg/22px-Flag_of_the_Democratic_Republic_of_the_Congo.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MDPC",
+        "Pais": "Rep\u00fablica Dominicana",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_the_Dominican_Republic.svg/22px-Flag_of_the_Dominican_Republic.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "MDSD",
+        "Pais": "Rep\u00fablica Dominicana",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_the_Dominican_Republic.svg/22px-Flag_of_the_Dominican_Republic.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LKPR",
+        "Pais": "Rep\u00fablica Tcheca",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/22px-Flag_of_the_Czech_Republic.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LROP",
+        "Pais": "Rom\u00eania",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/22px-Flag_of_Romania.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "HRYR",
+        "Pais": "Ruanda",
+        "Latitude": -1.966389,
+        "Longitude": 30.133056,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Rwanda.svg/22px-Flag_of_Rwanda.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "UMKK",
+        "Pais": "R\u00fassia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/22px-Flag_of_Russia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "UNNT",
+        "Pais": "R\u00fassia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/22px-Flag_of_Russia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "USSS",
+        "Pais": "R\u00fassia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/22px-Flag_of_Russia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ULLI",
+        "Pais": "R\u00fassia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/22px-Flag_of_Russia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "UEEE",
+        "Pais": "R\u00fassia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/22px-Flag_of_Russia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "UHHH",
+        "Pais": "R\u00fassia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/22px-Flag_of_Russia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "UHPP",
+        "Pais": "R\u00fassia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/22px-Flag_of_Russia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "UHWW",
+        "Pais": "R\u00fassia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/22px-Flag_of_Russia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "UIII",
+        "Pais": "R\u00fassia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/22px-Flag_of_Russia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "UUEE",
+        "Pais": "R\u00fassia\u00a0",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/22px-Flag_of_Russia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "URSS",
+        "Pais": "R\u00fassia\u00a0",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/22px-Flag_of_Russia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "FHAW",
+        "Pais": "Santa Helena",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Saint_Helena.svg/20px-Flag_of_Saint_Helena.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "FHSH",
+        "Pais": "Santa Helena",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Saint_Helena.svg/20px-Flag_of_Saint_Helena.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "GOBD",
+        "Pais": "Senegal",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Flag_of_Senegal.svg/22px-Flag_of_Senegal.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "WSSS ",
+        "Pais": "Singapura",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/22px-Flag_of_Singapore.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VCBI",
+        "Pais": "Sri Lanka",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/22px-Flag_of_Sri_Lanka.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "HSSS",
+        "Pais": "Sud\u00e3o",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_Sudan.svg/22px-Flag_of_Sudan.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ESNU",
+        "Pais": "Su\u00e9cia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Sweden.svg/22px-Flag_of_Sweden.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "ESSA",
+        "Pais": "Su\u00e9cia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Sweden.svg/22px-Flag_of_Sweden.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LSZA",
+        "Pais": "Su\u00ed\u00e7a",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/20px-Flag_of_Switzerland.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LSZH",
+        "Pais": "Su\u00ed\u00e7a",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/20px-Flag_of_Switzerland.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LSGG",
+        "Pais": "Su\u00ed\u00e7a",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/20px-Flag_of_Switzerland.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LSMM",
+        "Pais": "Su\u00ed\u00e7a",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/20px-Flag_of_Switzerland.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LSZG",
+        "Pais": "Su\u00ed\u00e7a",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/20px-Flag_of_Switzerland.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LSZR",
+        "Pais": "Su\u00ed\u00e7a",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/20px-Flag_of_Switzerland.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LSZS",
+        "Pais": "Su\u00ed\u00e7a",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/20px-Flag_of_Switzerland.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SMJP ",
+        "Pais": "Suriname",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Flag_of_Suriname.svg/22px-Flag_of_Suriname.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VTBS",
+        "Pais": "Tail\u00e2ndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/22px-Flag_of_Thailand.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VTUD",
+        "Pais": "Tail\u00e2ndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/22px-Flag_of_Thailand.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VTBD",
+        "Pais": "Tail\u00e2ndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/22px-Flag_of_Thailand.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VTSG",
+        "Pais": "Tail\u00e2ndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/22px-Flag_of_Thailand.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VTSM",
+        "Pais": "Tail\u00e2ndia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/22px-Flag_of_Thailand.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RCKH",
+        "Pais": "Taiwan",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Flag_of_the_Republic_of_China.svg/22px-Flag_of_the_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RCTP",
+        "Pais": "Taiwan",
+        "Latitude": 12188889.0,
+        "Longitude": -68959722.0,
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Flag_of_the_Republic_of_China.svg/22px-Flag_of_the_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "RCMQ",
+        "Pais": "Taiwan",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Flag_of_the_Republic_of_China.svg/22px-Flag_of_the_Republic_of_China.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "HTDA",
+        "Pais": "Tanz\u00e2nia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Flag_of_Tanzania.svg/22px-Flag_of_Tanzania.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "HTKJ",
+        "Pais": "Tanz\u00e2nia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Flag_of_Tanzania.svg/22px-Flag_of_Tanzania.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "TTPP ",
+        "Pais": "Trinidad e Tobago",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Trinidad_and_Tobago.svg/20px-Flag_of_Trinidad_and_Tobago.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "DTTA",
+        "Pais": "Tun\u00edsia\u00a0",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/22px-Flag_of_Tunisia.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LTBS",
+        "Pais": "Turquia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/22px-Flag_of_Turkey.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LTBJ",
+        "Pais": "Turquia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/22px-Flag_of_Turkey.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LTAC",
+        "Pais": "Turquia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/22px-Flag_of_Turkey.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LTAF",
+        "Pais": "Turquia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/22px-Flag_of_Turkey.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LTAI",
+        "Pais": "Turquia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/22px-Flag_of_Turkey.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LTCG",
+        "Pais": "Turquia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/22px-Flag_of_Turkey.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LTFJ",
+        "Pais": "Turquia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/22px-Flag_of_Turkey.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "LTFM",
+        "Pais": "Turquia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/22px-Flag_of_Turkey.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "UKBB",
+        "Pais": "Ucr\u00e2nia",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/22px-Flag_of_Ukraine.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "HUEN",
+        "Pais": "Uganda",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Flag_of_Uganda.svg/22px-Flag_of_Uganda.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "SVMI",
+        "Pais": "Venezuela",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/22px-Flag_of_Venezuela.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VVNB",
+        "Pais": "Vietn\u00e3",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/22px-Flag_of_Vietnam.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VVTS",
+        "Pais": "Vietn\u00e3",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/22px-Flag_of_Vietnam.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VVDN",
+        "Pais": "Vietn\u00e3",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/22px-Flag_of_Vietnam.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VVPQ",
+        "Pais": "Vietn\u00e3",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/22px-Flag_of_Vietnam.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VVDL",
+        "Pais": "Vietn\u00e3",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/22px-Flag_of_Vietnam.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VVVD",
+        "Pais": "Vietn\u00e3",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/22px-Flag_of_Vietnam.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VVVH",
+        "Pais": "Vietn\u00e3",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/22px-Flag_of_Vietnam.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VVCT",
+        "Pais": "Vietn\u00e3",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/22px-Flag_of_Vietnam.svg.png",
+        "": ""
+    },
+    {
+        "Icao": "VVCA",
+        "Pais": "Vietn\u00e3",
+        "Latitude": "",
+        "Longitude": "",
+        "Bandeira": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/22px-Flag_of_Vietnam.svg.png",
+        "": ""
+    }
+]

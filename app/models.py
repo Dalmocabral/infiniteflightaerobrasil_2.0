@@ -30,7 +30,7 @@ class User(db.Model, UserMixin):
     grau = db.Column(db.String(200))    
     logbook = db.relationship('Logbook', backref='user', lazy='dynamic')  #lazy='dynamic'
     data_create = db.Column(db.DateTime, default=datetime.utcnow)
-    pontos = db.Column(db.Integer())
+    pontos = db.Column(db.Integer(), default=0)
 
     def avatar(self, size):
         digest = md5(self.email.lower().encode('utf-8')).hexdigest()
