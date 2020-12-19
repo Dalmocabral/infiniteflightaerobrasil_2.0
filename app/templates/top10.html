@@ -1,17 +1,16 @@
 {% extends 'base.html' %}
 
+{% block title%} Top10 {% endblock %}
+
 {% block content %}
 <div class="container-fluid mt-5">
     <div class="row">
         <div class="col-sm">
-            <div class="card text-center text-white md=3" style="background-color:  #4cb4c7;">
+            <div class="card text-white md=3" style="background-color:  #4cb4c7; margin-top: 40px;">
                 <div>
                     <div class="card-header">
                         <h5>Horas de voo</h5>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title"> </h3>
-                    </div>
+                    </div>                    
                     <div>
                         <table class="table table-sm">
                             <thead>
@@ -22,45 +21,94 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                {% for user in users_top_10%}
+                                <!-- Primeira posição -->
                                 <tr>
-                                    <td>{{ user[0]}}</td>
-                                    <td>patente aqui</td>
-                                    <td>{{ user[1]  }}</td>
+                                <td><i class="fas fa-trophy fa-1x  ouro"></i> {{ top_10[0].registro}} - {{top_10[0].username}} <strong>{{top_10[0].sobrenome}}</strong></td>
+                                <td>
+                                    {% if top_10[0].cont_tempo > 3000 %}
+                                        <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif top_10[0].cont_tempo > 2000 %}
+                                        <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif top_10[0].cont_tempo > 1000 %}
+                                        <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif top_10[0].cont_tempo > 500 %}
+                                        <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif top_10[0].cont_tempo > 250 %}
+                                        <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                        <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                    </td>
+                                    <td>{{ "{0:02.0f} h".format(top_10[0].cont_tempo)  }}</td>
                                 </tr>
-                                {% endfor %}
+                                <!-- segunda posição -->
+                                <tr>
+                                    <td><i class="fas fa-trophy fa-1x  ouro"></i> {{ top_10[1].registro}} - {{top_10[1].username}} <strong>{{top_10[1].sobrenome}}</strong></td>
+                                    <td>
+                                        {% if top_10[1].cont_tempo > 3000 %}
+                                            <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                        {% elif top_10[1].cont_tempo > 2000 %}
+                                            <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                        {% elif top_10[1].cont_tempo > 1000 %}
+                                            <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                        {% elif top_10[1].cont_tempo > 500 %}
+                                            <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                        {% elif top_10[1].cont_tempo > 250 %}
+                                            <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                        {% else %}
+                                            <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                        {% endif %}
+                                        </td>
+                                        <td>{{ "{0:02.0f} h".format(top_10[1].cont_tempo)  }}</td>
+                                </tr>
+                                <!-- terceira posição -->
+                                <tr>
+                                    <td><i class="fas fa-trophy fa-1x  ouro"></i> {{ top_10[2].registro}} - {{top_10[2].username}} <strong>{{top_10[2].sobrenome}}</strong></td>
+                                    <td>
+                                        {% if top_10[2].cont_tempo > 3000 %}
+                                            <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                        {% elif top_10[2].cont_tempo > 2000 %}
+                                            <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                        {% elif top_10[2].cont_tempo > 1000 %}
+                                            <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                        {% elif top_10[2].cont_tempo > 500 %}
+                                            <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                        {% elif top_10[2].cont_tempo > 250 %}
+                                            <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                        {% else %}
+                                            <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                        {% endif %}
+                                        </td>
+                                        <td>{{ "{0:02.0f} h".format(top_10[2].cont_tempo)  }}</td>
+                                    </tr>
+                                
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="col-sm">
-            <div class="card text-center text-white md=3" style="background-color:  #7abecc;">
+            <div class="card text-center text-white md=3" style="background-color:  #7abecc; margin-top: 40px;">
                 <div class="card-header">
                     <h5>Voos realizados</h5>
                 </div>
-                <div class="card-body">
-                    <h3 class="card-title">
-                        {{ flying_bigger_then_15_hours }}
-                    </h3>
-                </div>
+                
                 <div>
                     <table class="table table-sm">
                         <thead>
                             <tr>
                                 <th>Piloto</th>
                                 <th>Patente</th>
-                                <th>Status</th>
+                                <th>Trechos Voados</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {% for user in top_flying_done%}
+                            {% for user in users_top_voo%}
                             <tr>
-                                <td>{{ user[0]}}</td>
+                                <td>{{ user}}</td>
                                 <td>patente aqui</td>
-                                <td>{{ user[1]  }}</td>
+                                <td>{{ user.cont_voo}} escalas voadas</td>
                             </tr>
                             {% endfor %}
                         </tbody>
@@ -68,7 +116,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm">
+        <div class="col-sm" style="margin-top: 40px;">
             <div class="card text-center text-white md=3" style="background-color:  #7cd1c0;">
                 <div>
                     <div class="card-header">

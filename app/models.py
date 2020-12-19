@@ -31,6 +31,8 @@ class User(db.Model, UserMixin):
     logbook = db.relationship('Logbook', backref='user', lazy='dynamic')  #lazy='dynamic'
     data_create = db.Column(db.DateTime, default=datetime.utcnow)
     pontos = db.Column(db.Integer(), default=0)
+    cont_tempo = db.Column(db.Float, default=0)
+    cont_voo = db.Column(db.Integer)
 
     def avatar(self, size):
         digest = md5(self.email.lower().encode('utf-8')).hexdigest()

@@ -10,7 +10,7 @@
     <div class="d-flex h-100 text-center align-items-center">
       <div class="w-100 text-white">
         <h1 class="display-3">Infinite Flight Aero Brasil</h1>
-        <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+        <p class="lead mb-0">Representando o Brasil no Infinite Flight</p>
       </div>
     </div>
   </div>
@@ -144,13 +144,13 @@
             </tr>
           </thead>
           <tbody>
-            {% for x in log %}
+            {% for x in range(5) %}
             <tr>
-              <td>{{x.user.username}} {{x.user.sobrenome}}</td>
-              <td>{{x.saida}}</td>
-              <td>{{x.chegada}}</td>
-              <td>{{x.tempo}}</td>              
-              <td>{{x.data_create.strftime('%d/%m/%Y')}}</td>
+              <td>{{log[x].user.username}} {{log[x].user.sobrenome}}</td>
+              <td>{{log[x].saida}}</td>
+              <td>{{log[x].chegada}}</td>
+              <td>{{log[x].tempo}}</td>              
+              <td>{{log[x].data_create.strftime('%d/%m/%Y')}}</td>
             </tr>
             {% endfor %}
           </tbody>

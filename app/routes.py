@@ -89,10 +89,11 @@ def login():
 @app.route('/user/<int:id>')
 @login_required
 def user(id):
+    va = get_all_time2(Logbook.query.filter_by(user_id=id).all())
     user = User.query.get(id)
     flying_time = get_all_time(Logbook.query.filter_by(user_id=id).all())
     log = Logbook.query.filter_by(user_id=id).order_by(Logbook.data_create.desc()).all()
-    return render_template('user.html', user=user, log=log, flying_time=flying_time)
+    return render_template('user.html', user=user, log=log, flying_time=flying_time, va=va)
 
 
 @app.route("/recuperar-senha", methods=["GET", "POST"])
@@ -183,20 +184,24 @@ def logbook(id):
         book.voo = form.voo.data.upper()        
         book.tempo = form.tempo.data
         book.user_id = current_user.id  
-        book.status = 'Em analise'      
+        book.status = 'Em analise'
+        current_user.cont_tempo = get_all_time2(Logbook.query.filter_by(user_id=id).all())
+        current_user.cont_voo = len(Logbook.query.filter_by(user_id=id).all())          
         db.session.add(book)
+        db.session.add(current_user)
         db.session.commit()
         flash('LogBook Registrado com Sucesso!!', 'success')
-        return redirect(url_for('logbook', id=current_user.id))    
+        return redirect(url_for('logbook', id=current_user.id))
+    
 
     return render_template('logbook.html', form=form, book=book)
 
 @app.route('/top10')
 def top10():
-    users_top_10 = db.session.execute("SELECT u.username, sum(l.tempo) as tempo FROM logbooks as l JOIN users as u ON l.user_id = u.id group by u.id limit 10")
-    top_flying_done = db.session.execute("SELECT u.username, l.status, count(l.status) as approved_status  FROM logbooks as l JOIN users as u ON l.user_id = u.id group by u.id")
+    users_top_10 = User.query.order_by(User.cont_tempo.desc()).all()
+    users_top_voo = User.query.order_by(User.cont_voo.desc()).all()
     users = User.query.all()
-    return render_template('top10.html', users_top_10=users_top_10, users=users, top_flying_done=top_flying_done)
+    return render_template('top10.html',    top_10=users_top_10, users=users, users_top_voo=users_top_voo)
 
 @app.route('/logout')
 @login_required

@@ -1,8 +1,8 @@
 """empty message
 
-Revision ID: befb2a2ca516
+Revision ID: a2f0aa3febc9
 Revises: 
-Create Date: 2020-12-12 18:34:26.735727
+Create Date: 2020-12-15 11:31:10.472070
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'befb2a2ca516'
+revision = 'a2f0aa3febc9'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -30,10 +30,12 @@ def upgrade():
     sa.Column('sobremim', sa.String(length=200), nullable=True),
     sa.Column('pais', sa.String(length=200), nullable=True),
     sa.Column('base', sa.String(length=200), nullable=True),
-    sa.Column('idade', sa.String(length=200), nullable=True),
+    sa.Column('idade', sa.DateTime(), nullable=True),
     sa.Column('grau', sa.String(length=200), nullable=True),
     sa.Column('data_create', sa.DateTime(), nullable=True),
     sa.Column('pontos', sa.Integer(), nullable=True),
+    sa.Column('cont_tempo', sa.Float(), nullable=True),
+    sa.Column('cont_voo', sa.Integer(), nullable=True),
     sa.PrimaryKeyConstraint('id')
     )
     op.create_index(op.f('ix_users_email'), 'users', ['email'], unique=True)
@@ -45,7 +47,6 @@ def upgrade():
     sa.Column('voo', sa.String(length=200), nullable=True),
     sa.Column('tempo', sa.Time(), nullable=False),
     sa.Column('user_id', sa.Integer(), nullable=True),
-    sa.Column('status', sa.String(length=200), nullable=True),
     sa.Column('data_create', sa.DateTime(), nullable=True),
     sa.ForeignKeyConstraint(['user_id'], ['users.id'], ),
     sa.PrimaryKeyConstraint('id')
