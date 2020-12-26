@@ -81,8 +81,27 @@
                                         </td>
                                         <td>{{ "{0:02.0f} h".format(top_10[2].cont_tempo)  }}</td>
                                     </tr>
-                                
-                            </tbody>
+                                    
+                            </tbody><!-- quarta posição -->
+                            <tr>
+                                <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ top_10[3].registro}} - {{top_10[3].username}} <strong>{{top_10[3].sobrenome}}</strong></td>
+                                <td>
+                                    {% if top_10[3].cont_tempo > 3000 %}
+                                        <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif top_10[3].cont_tempo > 2000 %}
+                                        <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif top_10[3].cont_tempo > 1000 %}
+                                        <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif top_10[3].cont_tempo > 500 %}
+                                        <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif top_10[3].cont_tempo > 250 %}
+                                        <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                        <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                    </td>
+                                    <td>{{ "{0:02.0f} h".format(top_10[3].cont_tempo)  }}</td>
+                                </tr>
                         </table>
                     </div>
                 </div>
