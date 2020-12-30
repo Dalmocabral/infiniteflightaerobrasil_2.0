@@ -38,12 +38,7 @@
 }
 
 
-.b1-pilots table {
-      
-      width: 50% !important; /*Importante manter o !important rs */
-      margin: auto;
-      margin-top: 40px;
-  }
+
 
   body {
     background-color: #ebeff5;
@@ -117,4 +112,8 @@ header .overlay {
   header video {
     display: none;
   }
+}
+.carreir {
+  text-align: center;
+  margin-top: 20px;
 }

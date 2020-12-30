@@ -63,7 +63,7 @@ def register():
         user.pais = form.pais.data
         db.session.add(user)
         db.session.commit()
-        return redirect(url_for('index'))
+        return redirect(url_for('login'))
 
     return render_template('register.html', form=form)
 
@@ -186,6 +186,7 @@ def logbook(id):
         book.user_id = current_user.id  
         book.status = 'Em analise'
         current_user.cont_tempo = get_all_time2(Logbook.query.filter_by(user_id=id).all())
+        current_user.cont_tempo_str = get_all_time(Logbook.query.filter_by(user_id=id).all())
         current_user.cont_voo = len(Logbook.query.filter_by(user_id=id).all())          
         db.session.add(book)
         db.session.add(current_user)
@@ -200,7 +201,7 @@ def logbook(id):
 def top10():
     users_top_10 = User.query.order_by(User.cont_tempo.desc()).all()
     users_top_voo = User.query.order_by(User.cont_voo.desc()).all()
-    users = User.query.all()
+    users = User.query.order_by(User.pontos.desc()).all()
     return render_template('top10.html',    top_10=users_top_10, users=users, users_top_voo=users_top_voo)
 
 @app.route('/logout')
@@ -208,3 +209,16 @@ def top10():
 def logout():
     logout_user()
     return redirect(url_for('index'))
+
+
+@app.route('/carreira')
+def carreira():
+    return render_template('carreira.html')
+
+@app.route('/pontos')
+def pontos():
+    return render_template('pontos.html')
+
+@app.route('/tracker')
+def tracker():
+    return render_template('tracker.html')

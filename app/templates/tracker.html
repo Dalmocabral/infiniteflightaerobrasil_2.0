@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+
+{% block title%} Tracker {% endblock %}
+
+{% block content %}
+
+  
+  <style>
+    th {
+      color: #fff;
+    }
+
+    #loader {
+      display: none;
+    }
+  </style>
+
+
+
+  <div class="container">
+    <div style="margin-top: 50px;">
+      <h1 class="text-center font-weight-light">Existem <strong><span id="quant"> </span> voos </strong> em andamento
+      </h1>
+      <h4 class="text-center font-weight-light" style="padding-top:0rem;" itemprop="headline">Aqui você pode acompanhar
+        todos os <strong>voos online</strong> no momento da IFAB</h4>
+    </div>
+
+
+    <div id="map" style="height: 480px;"></div>
+    <br>
+    <img id="loader" src="http://blog.teamtreehouse.com/wp-content/uploads/2015/05/loading.gif">
+    <div class="table-responsive">
+      <table class="table  table-sm table-striped" style="font-size: 12px;">
+        <thead>
+          <tr class="bg-info">
+            <th>Piloto</th>
+            <th>Voo</th>
+            <th>Cia.</th>
+            <th>Partida</th>
+            <th>Chegada</th>
+            <th>Altitude</th>
+            <th>Velocidade</th>
+            <th></th>
+
+          </tr>
+        </thead>
+        <tbody id="myTable">
+
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <p class="font-weight-normal" style="margin-top: 20px;">
+        Alguns voos acima poderão apresentar sigla fora do comum, isso devido ao colhimento de dados de usúarios que
+        utilizam a nossa siglas através das redes de voos online Infinite
+        Flight Global, sendo assim, Verifique a lista oficial de <a href="http://ifab.net.br/pilotos">pilotos</a>.
+      </p>
+      <br>
+
+    </div>
+  </div>
+
+
+
+  <script>
+    var loader = document.getElementById('loader');
+
+    loader.style.display = "block"; // Mostra o loader, utilize quando a função começar
+
+    setInterval(function () {
+      loader.style.display = "none"; // Esconde o loader, utilize quando a função terminar de executar.
+    }, 9000);
+
+    var map = L.map('map', { minZoom: 3, renderer: L.canvas(), fullscreenControl: true, worldCopyJump: true }).setView([0, 0], 1.5);
+    L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=fKwpBQyYAWfU4tcCXBBT', {
+      attribution: '<a href="https://www.ifvarb.com/" target="_blank">Infinite Flight Aero Brasilps://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+    }).addTo(map);
+
+    const api_atc = 'https://api.infiniteflight.com/public/v2/atc/7e5dcd44-1fb5-49cc-bc2c-a9aab1f6a856?apikey=nvo8c790hfa9q3duho2jhgd2jf8tgwqw';
+
+    const api_url = 'https://api.infiniteflight.com/public/v2/flights/7e5dcd44-1fb5-49cc-bc2c-a9aab1f6a856?apikey=nvo8c790hfa9q3duho2jhgd2jf8tgwqw';
+
+    const api_plan = 'http://infinite-flight-public-api.cloudapp.net/v1/GetFlightPlans.aspx?apikey=78879b1d-3ba3-47de-8e50-162f35dc6e04&sessionid=7e5dcd44-1fb5-49cc-bc2c-a9aab1f6a856';
+
+
+    layerGroup = L.layerGroup().addTo(map);
+    async function getISS() {
+
+      const response_atc = await fetch(api_atc);
+      const atc = await response_atc.json();
+      let atcs = atc.result
+
+      const response_plan = await fetch(api_plan);
+      const plan = await response_plan.json();
+
+
+      const response = await fetch(api_url);
+      const data = await response.json();
+      let array = data.result.filter(x => x.virtualOrganization && x.virtualOrganization.includes('Infinite Flight Aero Brasil'));
+
+
+      document.getElementById('quant').textContent = array.length;
+
+      layerGroup.clearLayers();
+
+      for (i in atcs) {
+        atc_lat = atcs[i].latitude;
+        atc_long = atcs[i].longitude;
+
+        var airplane = L.icon({
+          iconUrl: '../static/img/atcpin.png',
+          iconSize: [25, 38],
+          iconAnchor: [12, 24]
+        });
+
+        marker = L.marker([atc_lat, atc_long], { icon: airplane }).addTo(layerGroup)
+      }
+
+
+      for (i in array) {
+        /* for (x in plan) {
+           if (array[i].FlightID == plan[x].FlightID) {
+ 
+             dep = plan[x].Waypoints[1];
+             arr = plan[x].Waypoints.slice(-1)[0];*/
+
+        lat = array[i].latitude;
+        long = array[i].longitude;
+        user = array[i].username;
+        cal = array[i].callsign;
+        alt = array[i].altitude;
+        vel = array[i].speed;
+        hdg = array[i].heading;
+
+        var aircraft = L.icon({
+          iconUrl: 'https://i.ibb.co/tL4Q8ym/airplane.png',
+          iconSize: [24, 24],
+          iconAnchor: [12, 24],
+          labelAnchor: [6, 0]
+
+        });
+
+
+        var aircraft_3 = L.icon({
+          iconUrl: 'https://i.ibb.co/S0sZkmK/airplane-3.png',
+          iconSize: [24, 24],
+          iconAnchor: [12, 24],
+          labelAnchor: [6, 0]
+        });
+
+
+
+
+        if (user == 'Gabriel_f' || user == 'Retr0' || user == 'maverick_brasil' || user == 'Andre_Siqueira2' || user == 'Dalmo_Cabral') {
+         
+          marker = L.marker([lat, long], { icon: aircraft_3, rotationAngle: hdg }).bindTooltip( cal, {  permanent : true, color :"#f00", radius: 12   }).addTo(layerGroup)
+          marker.bindPopup("<span style='font-size:17px;color:#6495ed'>IFAB " + user + " <i class='fa fa-star'></i></span><br><span style='font-size:14px;color:#999'>Voo: " + cal + "</span><br><span style='font-size:14px;color:#999'>Alt: " + Math.trunc(alt) + " fts </span><br><span style='font-size:14px;color:#999'>Vel: " + Math.trunc(vel) + ' kts </span>');
+
+        } else {
+          marker = L.marker([lat, long], { icon: aircraft, rotationAngle: hdg }).bindTooltip( cal, {  permanent : true, color :"#f00", radius: 12, direction: 'auto' }).addTo(layerGroup)
+          marker.bindPopup("<span style='font-size:17px;'>IFAB " + user + "</span><br><span style='font-size:14px;color:#999'>Voo: " + cal + "</span><br><span style='font-size:14px;color:#999'>Alt: " + Math.trunc(alt) + " fts </span><br><span style='font-size:14px;color:#999'>Vel: " + Math.trunc(vel) + ' kts </span>');
+
+
+        };
+
+
+
+      };
+
+
+    };
+
+    setInterval(getISS, 10000)
+  </script>
+  <br> 
+
+{% endblock %}

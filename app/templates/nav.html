@@ -17,7 +17,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="{{ url_for('pilotos') }}"><i class="fas fa-user"></i> Pilotos</a>
-            <a class="dropdown-item" href="#"><i class="fas fa-medal"></i> Plano de Carreira</a>
+            <a class="dropdown-item" href="{{ url_for('carreira') }}"><i class="fas fa-medal"></i> Plano de Carreira</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -27,11 +27,11 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="{{url_for('top10')}}"><i class="fas fa-trophy"></i> Top10</a>
-            <a class="dropdown-item" href="#"><i class="fas fa-book-reader"></i> Pontos</a>
+            <a class="dropdown-item" href="{{url_for('pontos')}}"><i class="fas fa-book-reader"></i> Pontos</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Tracking</a>
+          <a class="nav-link" href="tracker">Tracking</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"

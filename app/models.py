@@ -32,7 +32,9 @@ class User(db.Model, UserMixin):
     data_create = db.Column(db.DateTime, default=datetime.utcnow)
     pontos = db.Column(db.Integer(), default=0)
     cont_tempo = db.Column(db.Float, default=0)
-    cont_voo = db.Column(db.Integer)
+    cont_tempo_str = db.Column(db.String(20000), default='00:00:00')
+    cont_voo = db.Column(db.Integer, default=0)
+    
 
     def avatar(self, size):
         digest = md5(self.email.lower().encode('utf-8')).hexdigest()

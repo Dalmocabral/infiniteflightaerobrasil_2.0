@@ -4,16 +4,19 @@
 {% block content %}
 
 <div class="container">
-    <h1 class="text-center pilots">PILOTOS IFAB</h1>
+    <h1 class="text-center pilots"  style="margin-top: 40px;">PILOTOS IFAB</h1>
 
-    <div class="table table-sm b1-pilots">
-        <table>
+    <div class="table-responsive" style="margin-top: 40px;">
+        <table class="table table-sm table-striped ">
             <thead>
                 <tr>
                     <th>Registro</th>
-                    <th>Piloto</th>
+                    <th>Piloto</th>                    
                     <th>Base</th>
                     <th>Pais</th>
+                    <th>Patente</th>
+                    <th>Voos</th>
+                    <th>Horas</th>
                     <th>Pontos</th>
                 </tr>
             </thead>
@@ -21,13 +24,30 @@
             {% for users in users %}
                 <tr>
                     <td><strong>IFAB{{users.registro}}</strong></td>
-                    <td><a href="{{ url_for('unique', id=users.id) }}">{{ users.username }} {{users.sobrenome}}</a></td>
+                    <td><a href="{{ url_for('unique', id=users.id) }}">{{ users.username }} <strong>{{users.sobrenome}}</strong></a></td>
                     <td>{{users.base}}</td>
                     {% if users.pais == 'Brasil' %}
                     <td><img src="../static/img/bandeiras/BR.png" alt=""></td>
                     {% elif users.pais == 'Inglaterra' %}
                     <td><img src="../static/img/bandeiras/GB.png" alt=""></td>
-                    {% endif %}                    
+                    {% endif %} 
+                    <td>
+                        {% if users.cont_tempo > 3000 %}
+                        <img src="../static/img/patente/CMM.png" alt=""  width="60px">
+                      {% elif users.cont_tempo > 2000 %}
+                        <img src="../static/img/patente/CMD.png" alt="" width="60px">
+                      {% elif users.cont_tempo > 1000 %}
+                        <img src="../static/img/patente/POF2.png" alt="" width="60px">
+                      {% elif users.cont_tempo > 500 %}
+                        <img src="../static/img/patente/POF.png" alt=""  width="60px">
+                      {% elif users.cont_tempo > 250 %}
+                        <img src="../static/img/patente/COP2.png" alt="" width="60px">
+                      {% else %}
+                        <img src="../static/img/patente/COP.png" alt="" width="60px">
+                      {% endif %}
+                    </td>
+                    <td>{{users.cont_voo}}</td>
+                    <td>{{users.cont_tempo_str}}</td>                   
                     <td>{{users.pontos}}</td>          
                     
                 </tr>                    

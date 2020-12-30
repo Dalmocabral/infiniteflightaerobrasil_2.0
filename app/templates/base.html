@@ -8,6 +8,22 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script src="https://cdn.leafletjs.com/leaflet/v1.1.0/leaflet-src.js"></script>
+  <script src="../static/js/leaflet.rotatedMarker.js"></script>
+  <script src="../static/js/ifabcompanhia.js"></script>
+  <script src="https://kit.fontawesome.com/7f05d2c49e.js"></script>
+
+    
+    
     <title>IFAB - {% block title %} {% endblock %}</title>
     {{ bootstrap.load_css() }}
 
@@ -19,6 +35,100 @@
         {% block content %} {% endblock %}
 
       </div>
+        <!-- Footer -->
+  <footer class="page-footer font-small  bg-light pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase">Sobre a IFAB</h5>
+          <p style="text-align: justify;padding-right: 15px;">
+
+            IFAB é uma organização virtual Brasileira que simula no <a href="https://infiniteflight.com/"
+              target="_blank" rel="noopener noreferrer">Infinite Flight.</a>
+            Sendo uma VO, a IFAB não tem <strong>frotas</strong> específicas ou <strong>rotas</strong> pré-definidas,
+            nosso objetivo é movimentar
+            o espaço aéreo da América do Sul, desde um voo de curta distância a um de longa distância ligando outros
+            continentes.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">ADMINISTRAÇÃO IFAB</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              CEO (Chief Executive Officer) - <a href="https://community.infiniteflight.com/u/maverick_brasil">@maverick_brasil</a>
+            </li>
+            <li>
+              Events Director - <a href="https://community.infiniteflight.com/u/gabriel_f">@Gabriel_F</a>
+            </li>
+            Administrator - <a href="https://community.infiniteflight.com/u/andre_siqueira">@Andre_Siqueira</a></li>
+            <li>
+              Administrator - <a href="https://community.infiniteflight.com/u/retr0">@retr0</a>
+            </li>
+            <li>
+              Developer website - <a href="https://community.infiniteflight.com/u/Dalmo_Cabral">@Dalmo_Cabral</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">REDES SOCIAIS</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://www.facebook.com/groups/1305304286307235/?ref=bookmarks">Facebook</a> <i
+                class="fab fa-facebook" aria-hidden="true"></i>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/if_aero_brasil/">Instagram</a> <i class="fab fa-instagram"
+                aria-hidden="true"></i>
+            </li>
+            <li>
+              <a href="https://community.infinite-flight.com/">Comunidade IF</a> <i class="fas fa-users"></i>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3  bg-secondary text-white">© 2020 Copyright:
+      Infinite Flight Aero Brasil</a>
+      <p>
+        Infinite Flight Aero Brasil é um grupo virtual que preza pela simulação, não temos quaisquer fins lucrativos ou
+        qualquer ligação com companhias da aviação real.
+      </p>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
   
       {{ bootstrap.load_js() }}
       <script src="{{url_for('static', filename='js/script.js')}}"></script>
