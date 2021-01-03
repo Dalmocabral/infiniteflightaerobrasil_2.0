@@ -11,7 +11,7 @@ from app.services.mail import send_email
 from app import app, db
 from app.forms import (ChangePasswordForm, ForgotPasswordForm, LogbookForm,
                        LoginForm, ProfileForm, RegisterForm)
-from app.models import Logbook, User
+from app.models import Logbook, User, Evento_1, Evento_2, Evento_3
 from app.tools import get_all_time, get_all_time2
 from app.get_user import get_flight, get_ifatc, get_icao
 
@@ -21,14 +21,18 @@ from app.get_user import get_flight, get_ifatc, get_icao
 @app.route('/')
 @app.route('/index')
 def index():    
-    log = Logbook.query.order_by(Logbook.data_create.desc()).all()
+    log = Logbook.query.order_by(Logbook.data_create.desc()).limit(5).all()
     users = User.query.order_by(User.data_create.desc()).limit(5).all()
+    tusuario = User.query.all()
+    tlogbook = Logbook.query.all()    
     return render_template('index.html', 
     users=users, 
     log=log, 
     flight=get_flight(),
     atc=get_ifatc(),
-    fixo=get_icao())
+    fixo=get_icao(),
+    tusuario=tusuario,
+    tlogbook=tlogbook)
 
 @app.route('/pilotos')
 def pilotos():
@@ -222,3 +226,22 @@ def pontos():
 @app.route('/tracker')
 def tracker():
     return render_template('tracker.html')
+
+
+@app.route('/evento1')
+def evento1():    
+    form = Evento_1.query.order_by(Evento_1.last_seen.desc()).all()
+    return render_template('evento1.html', form=form)
+
+@app.route('/evento2')
+def evento2():    
+    form = Evento_2.query.order_by(Evento_2.last_seen.desc()).all()
+    return render_template('evento2.html', form=form )
+
+@app.route('/evento3')
+def evento3():    
+    form = Evento_3.query.order_by(Evento_3.last_seen.desc()).all()
+    return render_template('evento3.html', form=form)
+
+
+

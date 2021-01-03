@@ -1,0 +1,894 @@
+{% extends 'base.html' %}
+{% block title %} evento 2 {% endblock %}
+
+{% block content %}
+<div class="h1  text-justify text-center pilot_evento">
+  <h1>Evento</h1>
+</div>
+<div class="container">
+  <div>
+    <p class="text-justify font-weight-normal">
+      Na IFAB, orgulhamo-nos de ter um dos grupos mais ativos da Comunidade brasileira do Infinite Flight.
+      Como tal, o nosso grupo reúne pilotos para vôos em grupo, eventos internos e eventos da IFC .
+      Também nos orgulhamos de ter os maiores e melhores eventos internos. No final de semana nossa atual série de
+      eventos
+      que leva nossos pilotos para ótimos locais em todo o mundo. Com média de mais de 15 pilotos por evento tem sido
+      uma de nossas maiores séries de eventos até o momento.
+    </p>
+  </div>
+
+  <div>
+    <h2>N/D</h2>
+    <p>N/D</p>
+  </div>
+  <!--Tabela dos voos
+  
+    <div class="col-xs-12 ">
+      <nav>
+        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active fonteCima" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+            aria-controls="nav-home" aria-selected="true"><i class="fas fa-plane-arrival fa-2x"></i>Chegadas</a>
+          <a class="nav-item nav-link fonteCima" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+            aria-controls="nav-profile" aria-selected="false"><i class="fas fa-plane-departure fa-2x"></i>Partidas</a>
+        </div>
+      </nav>
+      <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div class="table-responsive-xl">
+            <table class="table table-sm">
+              <thead class="thead-dark fonteCima">
+                <tr>
+                  <th scope="col">Data</th>
+                  <th scope="col">Hora/Decolagem</th>
+                  <th scope="col">Hora/Pouso</th>
+                  <th scope="col">Origem</th>                  
+                  <th scope="col">Aeronave</th>
+                  <th scope="col">Cia. Aérea</th>
+                  <th scope="col">Voo</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Gate</th>
+                  <th scope="col">Piloto</th>
+                </tr>
+              </thead>
+              {% for form in form %}
+              <tbody class="fontes">
+                <tr>
+                  <td class="text-center">{{ form.c_data}}</td>
+                  <td class="text-center">{{ form.c_hora_decolagem }}</td>
+                  <td class="text-center">{{ form.c_hora_pouso }}</td>
+                  <td class="text-center">{{ form.c_chegada }}</td>
+                  <td class="text-center">{{ form.aeronave }}</td>
+                  {% if   form.logo == 'AAL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AAL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'AAR' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AAR.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'ACA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/ACA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'AEA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AEA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>   
+                  {% elif form.logo == 'AEE' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AEE.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'AFL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AFL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'AFR' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AFR.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'AIC' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AIC.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'AIC' %}
+                  <td class="text-center"></tdclass>><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AMX.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'ANA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/ANA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'ANZ' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/ANZ.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'APJ' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/APJ.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'ARG' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/ARG.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'ASA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/ASA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'AUA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AUA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'AUI' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AUI.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'AVA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AVA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'AXM' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AXM.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'AZA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AZA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'AZU' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AZU.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'BAW' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/BAW.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'BBC' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/BBC.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'BWA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/BWA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'BTI' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/BTI.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'CAL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CAL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'CCA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CCA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'CES' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CES.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'CFG' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CFG.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'CLX' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CLX.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'CMP' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CMP.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>   
+                  {% elif form.logo == 'CPA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CPA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'CSN' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CSN.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'CTN' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CTN.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'CXA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CXA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'DAL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/DAL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'DLH' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/DLH.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'DTA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/DTA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'EDW' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/EDW.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'EIN' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/EIN.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'EJU' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/EJU.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'ELY' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/ELY.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'ETD' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/ETD.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'ETH' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/ETH.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'EVA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/EVA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'EWG' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/EWG.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'EXS' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/EXS.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'EZY' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/EZY.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'FBU' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://www.flightsfrom.com/img/airlines/100/BF_100px.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'FDB' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/FDB.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'FDX' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/FDX.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'FFT' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/FFT.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'FIN' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/FIN.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'FWI' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/FWI.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'GIA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/GIA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'GLO' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/GLO.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'GOW' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/GOW.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'HAL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/HAL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'IBE' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/IBE.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'IGO' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/IGO.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'JAL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/JAL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'JBU' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/JBU.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'JST' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/JST.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'KAC' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/KAC.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'KAL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/KAL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'KLM' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/KLM.png" alt="" srcset=""
+                       style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'KQA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/KQA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'LAN' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/LAN.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'LCO' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/LCO.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'LGL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/LGL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'LOT' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/LOT.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'LRC' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/LRC.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'MAS' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/MAS.png" alt="" srcset=""
+                       style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'MAU' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/MAU.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'MEA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/MEA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'MNO' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/MNO.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'MSR' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://www.flightsfrom.com/img/airlines/100/MS_100px.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'NAX' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/NAX.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'NKS' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/NKS.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'NO' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/BTQ.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>    
+                  {% elif form.logo == 'NWS' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/NWS.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'OMA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/OMA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'PAL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/PAL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'PIA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/PIA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'PTB' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/PTB.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'QFA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/QFA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'QTR' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/QTR.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'RAM' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/RAM.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>       
+                  {% elif form.logo == 'RJA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/RJA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'RYR' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/RYR.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'SAA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SAA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'SAS' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SAS.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'SCX' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SCX.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'SIA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SIA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'SKU' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SKU.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'SKX' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SKX.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'SVA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SVA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'SWA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SWA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>    
+                  {% elif form.logo == 'SWR' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SWR.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'TAM' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/TAM.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'TAP' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/TAP.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'THA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/THA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'THT' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/THT.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'THY' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/THY.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'TOM' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/TOM.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'TUI' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/TUI.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'TVF' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/TVF.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'UAE' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/UAE.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'UAL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/UAL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>        
+                  {% elif form.logo == 'UAE' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/UAE.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>   
+                  {% elif form.logo == 'UPS' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/UPS.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'VIR' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/VIR.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'VIV' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/VIV.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>       
+                  {% elif form.logo == 'VLG' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/VLG.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'VOE' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/VOE.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'VOI' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/VOI.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'WJA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/WJA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>   
+                  {% elif form.logo == 'WZZ' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/WZZ.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                      {% endif %}
+                  <td class="text-center">{{ form.c_voo }}</td>
+                  {% if form.c_status == 'C1' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://i.ibb.co/my1X68N/cinza.png" alt="" srcset=""> Agendado</i></td>
+                  {% elif form.c_status == 'V1'%}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://i.ibb.co/yQMzWhZ/vermelho.png" alt="" srcset=""> Cancelado</i> </td>
+                  {% elif form.c_status == 'V2'%}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://i.ibb.co/yQMzWhZ/vermelho.png" alt="" srcset=""> Partiu</i> </td>
+                  {% elif form.c_status == 'V3'%}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://i.ibb.co/yQMzWhZ/vermelho.png" alt="" srcset=""> Pousou</i> </td>
+                  {% elif form.c_status == 'G1'%}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://i.ibb.co/crQxkCf/verde.png" alt="" srcset=""> Estimado</i> </td>
+                  {% elif form.c_status == 'G2'%}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://i.ibb.co/crQxkCf/verde.png" alt="" srcset=""> Partiu</i> </td>
+                  {% elif form.c_status == 'G3'%}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://i.ibb.co/crQxkCf/verde.png" alt="" srcset=""> Pousou</i> </td>
+                  {% elif form.c_status == 'Y1'%}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://i.ibb.co/J3BPq0F/amarelo.png" alt="" srcset=""> Partiu</i> </td>
+                  {% elif form.c_status == 'Y2'%}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://i.ibb.co/J3BPq0F/amarelo.png" alt="" srcset=""> Pousou</i></td>                  
+                  {% else %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://i.ibb.co/my1X68N/cinza.png" alt="" srcset=""> Desconhecido</i> </td>                  
+                  {% endif %}
+                  <td style="color: dodgerblue;">{{ form.gate }}</td>                 
+                  <td class="text-center">{{ form.piloto }}</td>
+                </tr>
+              </tbody>
+              {% endfor %}
+            </table>
+          </div>
+        </div>
+        -->
+        <!-- TABELA DE PARTIDA 
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"> -->
+          <div class="table-responsive-sm">
+            <table class="table table-sm">
+              <thead class="thead-dark fonteCima">
+                <tr>
+                  <th scope="col">Data</th>
+                  <th scope="col">Origem</th>
+                  <th scope="col">Destino</th>
+                  <th scope="col">H/Partida</th>                  
+                  <th scope="col">H/Chegada</th>
+                  <th scope="col">Aeronave</th>
+                  <th scope="col">Cia. Aérea</th>
+                  <th scope="col">Voo</th>
+                  <th scope="col">Gate</th>
+                  <th colspan="2" scope="col">Status</th>
+                  <th scope="col">Piloto</th>
+                </tr>
+              </thead>
+              {% for form in form %}
+              <tbody class="fontes">
+                <tr>
+                  <td class="text-center">{{ form.p_data }}</td>
+                  <td class="text-center">{{ form.origem }}</td>
+                  <td class="text-center">{{ form.destino }}</td>
+                  <td class="text-center">{{ form.hora_partida }}</td>
+                  <td class="text-center">{{ form.hora_chegada }}</td>                  
+                  <td class="text-center">{{ form.aeronave }}</td>                  
+                  {% if   form.logo == 'AAL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AAL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'AAR' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AAR.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'ACA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/ACA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'AEA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AEA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>   
+                  {% elif form.logo == 'AEE' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AEE.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'AFL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AFL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'AFR' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AFR.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'AIC' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AIC.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'AMX' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AMX.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'ANA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/ANA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'ANZ' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/ANZ.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'APJ' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/APJ.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'ARG' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/ARG.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'ASA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/ASA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'AUA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AUA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'AUI' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AUI.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'AVA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AVA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'AXM' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AXM.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'AZA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AZA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'AZU' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/AZU.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'BAW' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/BAW.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'BBC' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/BBC.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'BWA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/BWA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'BTI' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/BTI.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'CAL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CAL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'CCA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CCA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'CES' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CES.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'CFG' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CFG.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'CLX' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CLX.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'CMP' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CMP.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>   
+                  {% elif form.logo == 'CPA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CPA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'CSN' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CSN.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'CTN' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CTN.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'CXA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/CXA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'DAL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/DAL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'DLH' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/DLH.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'DTA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/DTA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'EDW' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/EDW.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'EIN' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/EIN.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'EJU' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/EJU.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'ELY' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/ELY.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'ETD' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/ETD.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'ETH' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/ETH.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'EVA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/EVA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'EWG' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/EWG.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'EXS' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/EXS.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'EZY' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/EZY.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'FBU' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://www.flightsfrom.com/img/airlines/100/BF_100px.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'FDB' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/FDB.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'FDX' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/FDX.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'FFT' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/FFT.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'FIN' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/FIN.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'FWI' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/FWI.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'GIA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/GIA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'GLO' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/GLO.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'GOW' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/GOW.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'HAL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/HAL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'IBE' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/IBE.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'IGO' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/IGO.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'JAL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/JAL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'JBU' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/JBU.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'JST' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/JST.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'KAC' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/KAC.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'KAL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/KAL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'KLM' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/KLM.png" alt="" srcset=""
+                       style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'KQA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/KQA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'LAN' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/LAN.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'LCO' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/LCO.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'LGL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/LGL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'LOT' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/LOT.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'LRC' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/LRC.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'MAS' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/MAS.png" alt="" srcset=""
+                       style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'MAU' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/MAU.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'MEA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/MEA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'MNO' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/MNO.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'MSR' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://www.flightsfrom.com/img/airlines/100/MS_100px.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'NAX' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/NAX.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'NKS' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/NKS.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'NO' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/BTQ.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>    
+                  {% elif form.logo == 'NWS' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/NWS.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'OMA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/OMA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'PAL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/PAL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'PIA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/PIA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'PTB' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/PTB.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'QFA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/QFA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'QTR' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/QTR.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'RAM' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/RAM.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>       
+                  {% elif form.logo == 'RJA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/RJA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'RYR' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/RYR.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'SAA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SAA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'SBI' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SBI.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'SAS' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SAS.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'SCX' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SCX.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'SIA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SIA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>  
+                  {% elif form.logo == 'SKU' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SKU.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'SKX' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SKX.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'SVA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SVA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'SWA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SWA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>    
+                  {% elif form.logo == 'SWR' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/SWR.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'TAM' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/TAM.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'TAP' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/TAP.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'THA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/THA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'THT' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/THT.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'THY' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/THY.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'TOM' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/TOM.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'TUI' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/TUI.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'TVF' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/TVF.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'UAE' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/UAE.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'UAL' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/UAL.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>        
+                  {% elif form.logo == 'UAE' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/UAE.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>   
+                  {% elif form.logo == 'UPS' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/UPS.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'VIR' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/VIR.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'VIV' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/VIV.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>       
+                  {% elif form.logo == 'VLG' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/VLG.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'VOE' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/VOE.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td> 
+                  {% elif form.logo == 'VOI' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/VOI.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% elif form.logo == 'WJA' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/WJA.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>   
+                  {% elif form.logo == 'WZZ' %}
+                  <td class="text-center"><img class="figure-img img-fluid rounded" src="https://cdn.radarbox.com/airlines/sq/WZZ.png" alt="" srcset=""
+                      style="width: 30px; height: 30px;"></td>
+                  {% endif %}
+                  <td class="text-center">{{ form.voo}}</td>
+                  <td class="text-center" style="color: dodgerblue;">{{ form.gate }}</td>
+                  {% if form.p_status == 'C1' %}
+                  <td><img class="figure-img img-fluid rounded" src="../static/img/Cinza.png" alt="" srcset=""></i></td>
+                  {% elif form.p_status == 'V1'%}
+                  <td><img class="figure-img img-fluid rounded" src="../static/img/Vermelho.png" alt="" srcset=""></i> </td>
+                  {% elif form.p_status == 'V2'%}
+                  <td><img class="figure-img img-fluid rounded" src="../static/img/Vermelho.png" alt="" srcset=""></i> </td>
+                  {% elif form.p_status == 'V3'%}
+                  <td><img class="figure-img img-fluid rounded" src="../static/img/Vermelho.png" alt="" srcset=""></i> </td>
+                  {% elif form.p_status == 'G1'%}
+                  <td><img class="figure-img img-fluid rounded" src="../static/img/Verde.png" alt="" srcset=""></i> </td>
+                  {% elif form.p_status == 'G2'%}
+                  <td><img class="figure-img img-fluid rounded" src="../static/img/Verde.png" alt="" srcset=""></i> </td>
+                  {% elif form.p_status == 'G3'%}
+                  <td><img class="figure-img img-fluid rounded" src="../static/img/Verde.png" alt="" srcset=""></i> </td>
+                  {% elif form.p_status == 'Y1'%}
+                  <td><img class="figure-img img-fluid rounded" src="../static/img/Amarelo.png" alt="" srcset=""></i> </td>
+                  {% elif form.p_status == 'Y2'%}
+                  <td><img class="figure-img img-fluid rounded" src="../static/img/Amarelo.png" alt="" srcset=""></i> </td>
+                  {% else %}
+                  <td><img class="figure-img img-fluid rounded" src="../static/img/Cinza.png" alt="" srcset=""></i> </td>
+                  {% endif %} 
+                  {% if form.p_status == 'C1' %}
+                  <td class="text-center">Agendado</i> </td>
+                  {% elif form.p_status == 'V1'%}
+                  <td class="text-center">Cancelado</i> </td>
+                  {% elif form.p_status == 'V2'%}
+                  <td class="text-center">Partiu</i> </td>
+                  {% elif form.p_status == 'V3'%}
+                  <td class="text-center">Pousou</i> </td>
+                  {% elif form.p_status == 'G1'%}
+                  <td class="text-center">Estimado</i> </td>
+                  {% elif form.p_status == 'G2'%}
+                  <td class="text-center">Partiu</i> </td>
+                  {% elif form.p_status == 'G3'%}
+                  <td class="text-center">Pousou</i> </td>
+                  {% elif form.p_status == 'Y1'%}
+                  <td class="text-center">Partiu</i> </td>
+                  {% elif form.p_status == 'Y2'%}
+                  <td class="text-center">Pousou</i> </td>
+                  {% else %}
+                  <td class="text-center">Desconhecido</i> </td>
+                  {% endif %}                                   
+                  <td class="text-center">{{ form.piloto }}</td>
+                </tr>
+              </tbody>
+              {% endfor %}
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--
+                    C1 = Cinza - Agendado
+                    C2 = Cinza - Desconhecido
+                    V1 = Vermelho = Cancelado
+                    V2 = Vermelho = Partiu
+                    V3 = Vermelho = Pousou
+                    G1 = Verde = Estimado
+                    G2 = Verde = Partiu
+                    G3 = Verde = Pousou
+                    Y1 = Amarelo = Partiu
+                    Y2 = Amarelo = Pousou
+
+                  -->
+{% endblock %}

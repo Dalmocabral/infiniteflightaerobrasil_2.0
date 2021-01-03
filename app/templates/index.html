@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block title %}Home{% endblock %}
 {% block content %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <header>
   <div class="overlay"></div>
   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -62,7 +63,8 @@
                 <h3> PILOTOS DESTAQUES DO MÊS</h3>
               </div>
               <div>
-                <h3 style="text-transform: uppercase;letter-spacing: 1px;font-weight: 600; color: #F2B01C; font-size: 17px">
+                <h3
+                  style="text-transform: uppercase;letter-spacing: 1px;font-weight: 600; color: #F2B01C; font-size: 17px">
                   “QUEM SE DESTACA MERECE DESTAQUE”
                 </h3>
                 <p>
@@ -70,6 +72,20 @@
                   o reconhecimento é uma forma sincera de
                   gratidão. Portanto, a <strong>IFAB</strong> reconhece os pilotos destaques do mês, seja pelo
                   ranking de performance, seja pelo desempenho em grupo. Parabéns!</p>
+              </div>
+              <div class="text-center">
+                <div>
+                  <h2 class="display-4">Total de horas</h2>
+                  <h1></h1><span class="counter-up h1" data-count-to={{tusuario|sum(attribute='cont_tempo')}}></span></h1>
+                </div>
+                <div>
+                  <h2 class="display-4">Total de trechos voados</h2>
+                  <span class="counter-up h1" data-count-to={{tlogbook|length}}></span>
+                </div>
+                <div>
+                  <h2 class="display-4">Total de pilotos</h2>
+                  <span class="counter-up h1" data-count-to={{tusuario|length}}></span>
+                </div>
               </div>
             </div>
         </article>
@@ -102,7 +118,7 @@
       </div>
       <hr>
       <div>
-        <table class="table table-sm table-striped table-hover">
+        <table class="table table-sm table-striped">
           <thead>
             <tr>
               <th class="text-center" colspan="5">LiveFlights </th>
@@ -130,7 +146,7 @@
       </div>
       <hr>
       <div>
-        <table class="table table-sm table-striped table-hover">
+        <table class="table table-sm table-striped">
           <thead>
             <tr>
               <th class="text-center" colspan="5">Ultimos voos</th>
@@ -138,19 +154,19 @@
             <tr>
               <th scope="col">Piloto</th>
               <th scope="col">Saida</th>
-              <th scope="col">Chegada</th>              
+              <th scope="col">Chegada</th>
               <th scope="col">Tempo</th>
               <th scope="col">Data</th>
             </tr>
           </thead>
           <tbody>
-            {% for x in range(5) %}
+            {% for log in log %}
             <tr>
-              <td>{{log[x].user.username}} {{log[x].user.sobrenome}}</td>
-              <td>{{log[x].saida}}</td>
-              <td>{{log[x].chegada}}</td>
-              <td>{{log[x].tempo}}</td>              
-              <td>{{log[x].data_create.strftime('%d/%m/%Y')}}</td>
+              <td>{{log.user.username}} {{log.user.sobrenome}}</td>
+              <td>{{log.saida}}</td>
+              <td>{{log.chegada}}</td>
+              <td>{{log.tempo}}</td>
+              <td>{{log.data_create.strftime('%d/%m/%Y')}}</td>
             </tr>
             {% endfor %}
           </tbody>
@@ -158,7 +174,7 @@
       </div>
       <hr>
       <div>
-        <table class="table table-sm table-striped table-hover">
+        <table class="table table-sm table-striped">
           <thead>
             <tr>
               <th class="text-center" colspan="6">ATC Ativo Expert </th>
@@ -166,38 +182,38 @@
             <tr>
               <th>Aeroporto</th>
               <th>Frequência</th>
-              <th>Pais</th>              
+              <th>Pais</th>
             </tr>
           </thead>
           <tbody>
             {% for api in atc['result'] %}
-                        {% for fixo in fixo %}
-                        {% if api['airportName'] == fixo['Icao'] %}
-                        <tr>
-                            <td><a href="http://skyvector.com/airport/{{ api['Name'] }}">{{ api["airportName"] }}</a>
-                            </td>
-                            <td>
-                                {% if api['type'] == 0 %}
-                                ATIS
-                                {% elif api['type'] == 1 %}
-                                GND
-                                {% elif api['type'] == 5 %}
-                                DEP
-                                {% elif api['type'] == 4 %}
-                                APP
-                                {% elif api['type'] == 7 %}
-                                TWR
-                                {% elif api['type'] == 6 %}
-                                FIR
-                                {% endif %}
-                            </td>
-                            <td>
-                                <img src="{{fixo['Bandeira']}}" alt=""> {{ fixo['Pais']}}
-                                {% endif %}
-                            </td>
-                        </tr>
-                        {% endfor %}
-                        {% endfor %}
+            {% for fixo in fixo %}
+            {% if api['airportName'] == fixo['Icao'] %}
+            <tr>
+              <td><a href="http://skyvector.com/airport/{{ api['Name'] }}">{{ api["airportName"] }}</a>
+              </td>
+              <td>
+                {% if api['type'] == 0 %}
+                ATIS
+                {% elif api['type'] == 1 %}
+                GND
+                {% elif api['type'] == 5 %}
+                DEP
+                {% elif api['type'] == 4 %}
+                APP
+                {% elif api['type'] == 7 %}
+                TWR
+                {% elif api['type'] == 6 %}
+                FIR
+                {% endif %}
+              </td>
+              <td>
+                <img src="{{fixo['Bandeira']}}" alt=""> {{ fixo['Pais']}}
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+            {% endfor %}
           </tbody>
         </table>
       </div>
@@ -227,6 +243,28 @@
   }
 
   verificaHora()
+
+  const tempo_intervalo = 5; //ms -> define a velocidade da animação
+  const tempo = 4000; //ms -> define o tempo total da animaçao
+
+  $('.counter-up').each(function () {
+    let count_to = parseInt($(this).data('countTo'));
+    let intervalos = tempo / tempo_intervalo; //quantos passos de animação tem
+    let incremento = count_to / intervalos; //quanto cada contador deve aumentar
+    let valor = 0;
+    let el = $(this);
+
+    let timer = setInterval(function () {
+      if (valor >= count_to) { //se já contou tudo tem de parar o timer
+        valor = count_to;
+        clearInterval(timer);
+      }
+
+      let texto = valor.toFixed(0).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
+      el.text(texto);
+      valor += incremento;
+    }, tempo_intervalo);
+  });
 
 </script>
 

@@ -65,6 +65,60 @@ class Logbook(db.Model):
         return self.voo
 
 
+class Evento_1(db.Model):
+
+    __tablename__ = 'eventos_1'
+
+    id = db.Column(db.Integer, primary_key=True)     
+    
+    logo = db.Column(db.String(20))    
+    origem = db.Column(db.String(120))    
+    destino = db.Column(db.String(120))
+    p_data = db.Column(db.String(20))
+    voo = db.Column(db.String(200))       
+    hora_partida = db.Column(db.String(120))
+    hora_chegada = db.Column(db.String(120))
+    aeronave = db.Column(db.String(120))
+    gate = db.Column(db.String(120))    
+    piloto = db.Column(db.String(120))    
+    status = db.Column(db.String(120))
+    last_seen = db.Column(db.DateTime, default=datetime.utcnow)
+
+class Evento_2(db.Model):
+
+    __tablename__ = 'eventos_2'
+
+    id = db.Column(db.Integer, primary_key=True)     
+    logo = db.Column(db.String(20))    
+    origem = db.Column(db.String(120))    
+    destino = db.Column(db.String(120))    
+    p_data = db.Column(db.String(20))
+    voo = db.Column(db.String(200))       
+    hora_partida = db.Column(db.String(120))
+    hora_chegada = db.Column(db.String(120))
+    aeronave = db.Column(db.String(120))
+    gate = db.Column(db.String(120))    
+    piloto = db.Column(db.String(120))    
+    status = db.Column(db.String(120))
+    last_seen = db.Column(db.DateTime, default=datetime.utcnow)
+
+class Evento_3(db.Model):
+
+    __tablename__ = 'eventos_3'
+
+    id = db.Column(db.Integer, primary_key=True)     
+    logo = db.Column(db.String(20))    
+    origem = db.Column(db.String(120))    
+    destino = db.Column(db.String(120))    
+    p_data = db.Column(db.String(20))
+    voo = db.Column(db.String(200))       
+    hora_partida = db.Column(db.String(120))
+    hora_chegada = db.Column(db.String(120))
+    aeronave = db.Column(db.String(120))
+    gate = db.Column(db.String(120))    
+    piloto = db.Column(db.String(120))    
+    status = db.Column(db.String(120))
+    last_seen = db.Column(db.DateTime, default=datetime.utcnow)
 
 
 

@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
-
+{% block title %} Login {% endblock %}
 {% from 'bootstrap/form.html' import render_form %}
 
 
 {% block content %}
-<div class="container">
+<div class="container" style="margin-top: 40px;">
   {% include 'componentes/notifications.html' %}
     {{ render_form(form) }}
 </div>
+
 {% endblock %}

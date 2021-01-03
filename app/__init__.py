@@ -29,7 +29,7 @@ admin = Admin(app, name='My admin name', template_mode='bootstrap3')
 
 from app import routes, models
 
-from app.models import User, Logbook
+from app.models import User, Logbook, Evento_1, Evento_2, Evento_3
 
 class UserView(ModelView): 
 
@@ -53,4 +53,7 @@ class LogbookView(ModelView):
 
 admin.add_view(UserView(User, db.session))
 admin.add_view(LogbookView(Logbook, db.session))
+admin.add_view(LogbookView(Evento_1, db.session))
+admin.add_view(LogbookView(Evento_2, db.session))
+admin.add_view(LogbookView(Evento_3, db.session))
 

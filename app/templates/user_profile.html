@@ -1,6 +1,6 @@
 
 {% extends 'base.html' %}
-
+{% block title %} Usúario {% endblock %}
 {% from 'bootstrap/form.html' import render_form %}
 {% block content %}
 <div class="container">
@@ -22,8 +22,8 @@
     {% else %}
       <img src="../static/img/patente/COP.png" alt="" width="250px">
     {% endif %}
-    <br>
-    <p><strong>Gametag:</strong> <small>{{ user.gametag}}</small></p>
+    <br> 
+    <br>   
     <p><strong>IFCommunity:</strong> <small><a href="https://community.infiniteflight.com/u/{{user.ifcomunity}}/activity" target="_blank">@{{user.ifcomunity}}</a></small></p>
     <p><strong>Sobre:</strong> <small>{{ user.sobremim}}</small></p>        
   </div>      

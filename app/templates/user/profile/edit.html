@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% block title%} Editar Perfil {% endblock %}
 {% from "bootstrap/form.html" import render_form %}
 
 
@@ -13,6 +14,9 @@
                     href="{{ url_for('profile') }}">Perfil</a>
                     <a class="list-group-item list-group-item-action" 
                     href="{{ url_for('change_password') }}">Alterar Senha</a>
+                    <a class="list-group-item list-group-item-action" 
+                    href="https://www.gravatar.com" target="_blank">Trocar Imagem Perfil</a>
+
                 </div>
             </div>
             <div class="card card-body">
