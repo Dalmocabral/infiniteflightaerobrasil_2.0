@@ -1,3 +1,4 @@
+import os
 import datetime
 import json
 
@@ -6,9 +7,11 @@ from flask import flash, redirect, render_template, url_for
 from flask_login import current_user, login_required, login_user, logout_user
 from sqlalchemy.sql import func
 from werkzeug.security import check_password_hash, generate_password_hash
+from werkzeug.utils import secure_filename
 from app.services.mail import send_email
+from flask_uploads import configure_uploads, IMAGES, UploadSet
 
-from app import app, db
+from app import app, db, images
 from app.forms import (ChangePasswordForm, ForgotPasswordForm, LogbookForm,
                        LoginForm, ProfileForm, RegisterForm)
 from app.models import Logbook, User, Evento_1, Evento_2, Evento_3
@@ -69,7 +72,7 @@ def register():
         db.session.commit()
         return redirect(url_for('login'))
 
-    return render_template('register.html', form=form)
+    return render_template('register.html', form=form, filename=filename)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -180,8 +183,9 @@ def change_password():
 def logbook(id):
     form = LogbookForm()
     book =  Logbook.query.filter_by(user_id=current_user.id).all()
-    if form.validate_on_submit():
-        book = Logbook()
+    if form.validate_on_submit():        
+        filename = images.save(form.photo.data)   
+        book = Logbook()       
         book.saida = form.saida.data.upper()
         book.chegada = form.chegada.data.upper()
         book.aeronave = form.aeronave.data.upper()
@@ -194,8 +198,9 @@ def logbook(id):
         current_user.cont_voo = len(Logbook.query.filter_by(user_id=id).all())          
         db.session.add(book)
         db.session.add(current_user)
-        db.session.commit()
+        db.session.commit()       
         flash('LogBook Registrado com Sucesso!!', 'success')
+    
         return redirect(url_for('logbook', id=current_user.id))
     
 

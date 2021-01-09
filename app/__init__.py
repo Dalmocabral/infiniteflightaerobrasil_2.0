@@ -6,13 +6,12 @@ from flask_login import LoginManager
 from flask_bootstrap import Bootstrap
 from flask_babel import Babel
 from flask_mail import Mail
-
+from flask_uploads import configure_uploads, IMAGES, UploadSet
 
 from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
 from werkzeug.security import generate_password_hash
 from app import filters
-
 
 
 app = Flask(__name__)
@@ -25,7 +24,10 @@ migrate = Migrate(app, db)
 login_manager = LoginManager(app)
 bootstrap = Bootstrap(app)
 admin = Admin(app, name='My admin name', template_mode='bootstrap3')
+app.config['UPLOADED_IMAGES_DEST'] = 'uploads/imagem'
 
+images = UploadSet('images', IMAGES)
+configure_uploads(app, images)
 
 from app import routes, models
 
