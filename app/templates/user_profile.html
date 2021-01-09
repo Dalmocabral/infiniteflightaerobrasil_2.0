@@ -25,7 +25,8 @@
     <br> 
     <br>   
     <p><strong>IFCommunity:</strong> <small><a href="https://community.infiniteflight.com/u/{{user.ifcomunity}}/activity" target="_blank">@{{user.ifcomunity}}</a></small></p>
-    <p><strong>Sobre:</strong> <small>{{ user.sobremim}}</small></p>        
+    <p><strong>Sobre:</strong> <small>{{ user.sobremim}}</small></p>    
+    {% if user.data_create %}<p>Ultima visitar: {{ user.data_create.strftime('%d/%m/%Y') }}</p>{% endif %}    
   </div>      
   <br>
   <div>

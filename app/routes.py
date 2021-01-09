@@ -1,5 +1,5 @@
 import os
-import datetime
+from datetime import datetime
 import json
 
 import requests
@@ -20,6 +20,11 @@ from app.get_user import get_flight, get_ifatc, get_icao
 
 
 
+@app.before_request
+def before_request():
+    if current_user.is_authenticated:
+        current_user.data_create = datetime.utcnow()
+        db.session.commit()
 
 @app.route('/')
 @app.route('/index')

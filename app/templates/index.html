@@ -120,7 +120,7 @@
           <tbody>
             {% for user in users %}
             <tr>
-              <td>IFAB-{{user.registro}}</td>
+              <td style="color:#006400;"><img src="../static/img/arrow-gray.png" alt=""> IFAB-{{user.registro}}</td>
               <td>{{user.username}} <strong>{{user.sobrenome}}</strong></td>
               <td>{{user.data_create.strftime('%d/%m/%Y')}}</td>
             </tr>
@@ -175,9 +175,9 @@
             {% for log in log %}
             <tr>
               <td>{{log.user.username}} {{log.user.sobrenome}}</td>
-              <td>{{log.saida}}</td>
-              <td>{{log.chegada}}</td>
-              <td>{{log.tempo}}</td>
+              <td><i class="fas fa-map-marker-alt"></i> {{log.saida}}</td>
+              <td><i class="fas fa-map-marker-alt"></i> {{log.chegada}}</td>
+              <td><i class="fas fa-clock"></i> {{log.tempo}}</td>
               <td>{{log.data_create.strftime('%d/%m/%Y')}}</td>
             </tr>
             {% endfor %}
