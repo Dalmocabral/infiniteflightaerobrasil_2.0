@@ -72,7 +72,7 @@ def register():
         db.session.commit()
         return redirect(url_for('login'))
 
-    return render_template('register.html', form=form, filename=filename)
+    return render_template('register.html', form=form)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -204,7 +204,7 @@ def logbook(id):
         return redirect(url_for('logbook', id=current_user.id))
     
 
-    return render_template('logbook.html', form=form, book=book)
+    return render_template('logbook.html', form=form)
 
 @app.route('/top10')
 def top10():
