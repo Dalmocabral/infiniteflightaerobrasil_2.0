@@ -187,13 +187,12 @@ paises = SelectField('País de origem', choices=[
 class ProfileForm(FlaskForm):
     username = StringField('Nome',  validators=[DataRequired('O campo e obrigatório')])
     sobrenome = StringField('Sobrenome', validators=[DataRequired()])
-    email = StringField('E-mail', validators=[Email()])
-    gametag = StringField('Gametag', validators=[DataRequired()])
+    email = StringField('E-mail', validators=[Email()])    
     registro = StringField('Registro', validators=[DataRequired()])
     ifcomunity = StringField('IFComunity', validators=[DataRequired()])
     sobremim = TextAreaField('Sobre mim', validators=[DataRequired()]) 
     base = StringField('Base', validators=[DataRequired()])
-    idade = StringField('Data de Nascimento', validators=[DataRequired()])
+    telefone = StringField('Telefone', validators=[DataRequired()])
     grau =  SelectField('Grau', choices=[('3', '3'), ('4', '4'), ('5', '5')])
     pais = paises
     submit = SubmitField("salvar")
@@ -223,13 +222,12 @@ class RegisterForm(FlaskForm):
     sobrenome = StringField('Sobrenome', validators=[DataRequired()])
     email = StringField('E-mail', validators=[Email()])
     password = PasswordField('Password', validators=[Length(3, 9, 'O campo dever conter 3 á 9 caracters' )]) 
-    password2 = PasswordField('Repete a Senha', validators=[DataRequired(), EqualTo('password')])
-    gametag = StringField('Gametag', validators=[DataRequired()])
+    password2 = PasswordField('Repetir Senha', validators=[DataRequired(), EqualTo('password')])    
     registro = StringField('Registro', validators=[DataRequired()])
-    ifcomunity = StringField('IFComunity', validators=[DataRequired()])
+    ifcomunity = StringField('Nome IFComunity', validators=[DataRequired()])
     sobremim = TextAreaField('Sobre mim', validators=[DataRequired()]) 
     base = StringField('Base', validators=[DataRequired()])
-    idade = StringField('Data de Nascimento', validators=[DataRequired()])
+    telefone = StringField('Telefone', validators=[DataRequired()])
     grau =  SelectField('Grau', choices=[('3', '3'), ('4', '4'), ('5', '5')])
     pais = paises
 

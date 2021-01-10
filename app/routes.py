@@ -63,14 +63,13 @@ def register():
         user = User()
         user.username = form.username.data.capitalize()
         user.email = form.email.data
-        user.password = generate_password_hash(form.password.data)
-        user.sobrenome = form.sobrenome.data.capitalize()
-        user.gametag = form.gametag.data
+        user.password = generate_password_hash(form.password.data)        
+        user.sobrenome = form.sobrenome.data.capitalize()        
         user.registro = form.registro.data
         user.ifcomunity = form.ifcomunity.data
         user.sobremim = form.sobremim.data
         user.base = form.base.data.upper()
-        user.idade = form.idade.data
+        user.telefone = form.telefone.data
         user.grau = form.grau.data
         user.pais = form.pais.data
         db.session.add(user)
@@ -130,10 +129,9 @@ def profile():
 
     if form.validate_on_submit():
         current_user.email = form.email.data
-        current_user.idade = form.idade.data 
+        current_user.telefone = form.telefone.data 
         current_user.sobremim = form.sobremim.data
-        current_user.registro = form.registro.data
-        current_user.gametag = form.gametag.data
+        current_user.registro = form.registro.data        
         current_user.ifcomunity = form.ifcomunity.data
         current_user.sobrenome =  form.sobrenome.data
         current_user.username = form.username.data
@@ -147,10 +145,9 @@ def profile():
         return redirect(url_for(".profile"))
 
     form.email.data = current_user.email
-    form.idade.data = current_user.idade
+    form.telefone.data = current_user.telefone
     form.sobremim.data = current_user.sobremim
-    form.registro.data = current_user.registro
-    form.gametag.data = current_user.gametag
+    form.registro.data = current_user.registro    
     form.ifcomunity.data = current_user.ifcomunity
     form.sobrenome.data = current_user.sobrenome
     form.username.data = current_user.username

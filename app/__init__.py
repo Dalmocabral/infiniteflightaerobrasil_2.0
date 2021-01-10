@@ -37,10 +37,10 @@ class UserView(ModelView):
 
     create_modal = True
     edit_modal = True
-    column_editable_list = ['username', 'sobrenome', 'registro', 'gametag']
+    column_editable_list = ['username', 'sobrenome', 'registro']
     column_searchable_list = ['username', 'registro']
-    column_exclude_list = ['password', 'ifcomunity', 'sobremim', 'pais', 'base', 'idade', 'grau', 'pontos', 'email']
-    column_filters = ['username', 'registro', 'gametag']
+    column_exclude_list = ['password', 'ifcomunity', 'sobremim', 'pais', 'base', 'telefone', 'grau', 'pontos', 'email']
+    column_filters = ['username', 'registro']
 
     def on_model_change(self, form, model, is_created):
 
