@@ -25,7 +25,7 @@ login_manager = LoginManager(app)
 bootstrap = Bootstrap(app)
 admin = Admin(app, name='My admin name', template_mode='bootstrap3')
 app.config['UPLOADED_IMAGES_DEST'] = 'uploads/imagem'
-
+app.config['FLASK_ADMIN_SWATCH'] = 'lumen'
 images = UploadSet('images', IMAGES)
 configure_uploads(app, images)
 
@@ -38,8 +38,8 @@ class UserView(ModelView):
     create_modal = True
     edit_modal = True
     column_editable_list = ['username', 'sobrenome', 'registro']
-    column_searchable_list = ['username', 'registro']
-    column_exclude_list = ['password', 'ifcomunity', 'sobremim', 'pais', 'base', 'telefone', 'grau', 'pontos', 'email']
+    column_searchable_list = ['username', 'registro', 'telefone']
+    column_exclude_list = ['password', 'ifcomunity', 'sobremim', 'pais', 'base', 'telefone', 'grau', 'pontos', 'email', 'cont_tempo', 'cont_tempo_str', 'cont_voo']
     column_filters = ['username', 'registro']
 
     def on_model_change(self, form, model, is_created):

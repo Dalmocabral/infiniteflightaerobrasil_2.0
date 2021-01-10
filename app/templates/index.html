@@ -120,9 +120,9 @@
           <tbody>
             {% for user in users %}
             <tr>
-              <td style="color:#006400;"><img src="../static/img/arrow-gray.png" alt=""> IFAB-{{user.registro}}</td>
+              <td style="color:#e3068f;"><img src="../static/img/arrow-gray.png" alt=""> IFAB-{{user.registro}}</td>
               <td>{{user.username}} <strong>{{user.sobrenome}}</strong></td>
-              <td>{{user.data_create.strftime('%d/%m/%Y')}}</td>
+              <td style="color: #6faedf;">{{user.data_create.strftime('%d/%m/%Y')}}</td>
             </tr>
             {% endfor %}
           </tbody>

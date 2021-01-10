@@ -6,7 +6,7 @@ from flask_wtf.file import FileField
 from app.models import User
 
 
-paises = SelectField('País de origem', choices=[
+paises = SelectField('Localidade', choices=[
         ("África do Sul", "África do Sul"),
         ("Albânia", "Albânia"),
         ("Alemanha", "Alemanha"),
@@ -225,7 +225,7 @@ class RegisterForm(FlaskForm):
     password2 = PasswordField('Repetir Senha', validators=[DataRequired(), EqualTo('password')])    
     registro = StringField('Registro', validators=[DataRequired()])
     ifcomunity = StringField('Nome IFComunity', validators=[DataRequired()])
-    sobremim = TextAreaField('Sobre mim', validators=[DataRequired()]) 
+    sobremim = TextAreaField('Biografia', validators=[DataRequired()]) 
     base = StringField('Base', validators=[DataRequired()])
     telefone = StringField('Telefone', validators=[DataRequired()])
     grau =  SelectField('Grau', choices=[('3', '3'), ('4', '4'), ('5', '5')])

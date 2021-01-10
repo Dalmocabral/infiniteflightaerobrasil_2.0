@@ -1,70 +1,715 @@
 {% extends 'base.html' %}
-{% block title %} Cadastro {% endblock %}
 
+{% block title%} Top10 {% endblock %}
 
 {% block content %}
-<div class="container" style="margin-top: 40px;">
-    
-    <form action="" method="POST">
-        {% include 'componentes/notifications.html' %}
-        {{  form.csrf_token  }} 
-        <div class="form-group">
-            <label for="">Nome</label>
-            {{form.username(class="form-control")}}
-        </div>
-        <div class="form-group">
-            <label for="">Sobrenome</label>
-            {{form.sobrenome(class="form-control")}}            
-        </div>
-        <div class="form-group">
-            <label for="">E-mail</label>
-            {{form.email(class="form-control", placeholder="Digite email")}}
-        </div>
-        <div class="form-group">
-            <label for="">Senha</label>
-            {{form.password(class="form-control", type="password")}}
-        </div>
-        <div class="form-group">
-            <label for="">Repetir Senha</label>
-            {{form.password2(class="form-control", type="password")}}
-        </div>
-        <div class="form-group">
-            <label for="">Registro</label>
-            {{form.registro(class="form-control", placeholder="Exemplo: 1078")}}
-            <small id="emailHelp" class="form-text text-muted">Para registro, inserir os 4 ultimos dígitos do telefone celular.</small>
-        </div>
-        <div class="form-group">
-            <label for="">Nome IFCommunity</label>
-            <div class="input-group mb-2">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">@</div>
+<div class="container-fluid mt-5">
+    <div  class="font-weight-bold text-center text-justify fieldset">
+        <h1>TOP 10 IFAB</h1>
+       </div>
+       <div class="dataTables_info" id="tablepress-6_info" role="status" aria-live="polite">↨ 10 Pilotos Listados</div>
+    <div class="row">
+        <div class="col-sm">
+            <div class="card text-white md=3" style="background-color:  #4cb4c7; margin-top: 40px;">
+                <div>
+                    <div class="card-header text-center">
+                        <h5>Horas de voo</h5>
+                    </div>
+                    <div>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Piloto</th>
+                                    <th>Patente</th>
+                                    <th>Horas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Primeira posição -->
+                                <tr>
+                                    <td><i class="fas fa-trophy fa-1x  ouro" style="color: #daa520;"></i> {{ top_10[0].registro}} -
+                                        {{top_10[0].username}} <strong>{{top_10[0].sobrenome}}</strong></td>
+                                    <td>
+                                        {% if top_10[0].cont_tempo > 3000 %}
+                                        <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                        {% elif top_10[0].cont_tempo > 2000 %}
+                                        <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                        {% elif top_10[0].cont_tempo > 1000 %}
+                                        <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                        {% elif top_10[0].cont_tempo > 500 %}
+                                        <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                        {% elif top_10[0].cont_tempo > 250 %}
+                                        <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                        {% else %}
+                                        <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                        {% endif %}
+                                    </td>
+                                    <td>{{top_10[0].cont_tempo_str}}</td>
+                                </tr>
+                                <!-- segunda posição -->
+                                <tr>
+                                    <td><i class="fas fa-trophy fa-1x" style="color: #c0c0c0;"></i> {{ top_10[1].registro}} -
+                                        {{top_10[1].username}} <strong>{{top_10[1].sobrenome}}</strong></td>
+                                    <td>
+                                        {% if top_10[1].cont_tempo > 3000 %}
+                                        <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                        {% elif top_10[1].cont_tempo > 2000 %}
+                                        <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                        {% elif top_10[1].cont_tempo > 1000 %}
+                                        <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                        {% elif top_10[1].cont_tempo > 500 %}
+                                        <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                        {% elif top_10[1].cont_tempo > 250 %}
+                                        <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                        {% else %}
+                                        <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                        {% endif %}
+                                    </td>
+                                    <td>{{ top_10[1].cont_tempo_str }}</td>
+                                </tr>
+                                <!-- terceira posição -->
+                                <tr>
+                                    <td><i class="fas fa-trophy fa-1x" style="color: #cd7f32;"></i> {{ top_10[2].registro}} -
+                                        {{top_10[2].username}} <strong>{{top_10[2].sobrenome}}</strong></td>
+                                    <td>
+                                        {% if top_10[2].cont_tempo > 3000 %}
+                                        <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                        {% elif top_10[2].cont_tempo > 2000 %}
+                                        <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                        {% elif top_10[2].cont_tempo > 1000 %}
+                                        <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                        {% elif top_10[2].cont_tempo > 500 %}
+                                        <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                        {% elif top_10[2].cont_tempo > 250 %}
+                                        <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                        {% else %}
+                                        <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                        {% endif %}
+                                    </td>
+                                    <td>{{top_10[2].cont_tempo_str }}</td>
+                                </tr>
+
+                                <!-- quarta posição -->
+                                <tr>
+                                    <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ top_10[3].registro}} -
+                                        {{top_10[3].username}} <strong>{{top_10[3].sobrenome}}</strong></td>
+                                    <td>
+                                        {% if top_10[3].cont_tempo > 3000 %}
+                                        <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                        {% elif top_10[3].cont_tempo > 2000 %}
+                                        <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                        {% elif top_10[3].cont_tempo > 1000 %}
+                                        <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                        {% elif top_10[3].cont_tempo > 500 %}
+                                        <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                        {% elif top_10[3].cont_tempo > 250 %}
+                                        <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                        {% else %}
+                                        <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                        {% endif %}
+                                    </td>
+                                    <td>{{top_10[3].cont_tempo_str }}</td>
+                                </tr>
+                                <!-- quinta posição -->
+                                <tr>
+                                    <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ top_10[4].registro}} -
+                                        {{top_10[4].username}} <strong>{{top_10[4].sobrenome}}</strong></td>
+                                    <td>
+                                        {% if top_10[4].cont_tempo > 3000 %}
+                                        <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                        {% elif top_10[4].cont_tempo > 2000 %}
+                                        <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                        {% elif top_10[4].cont_tempo > 1000 %}
+                                        <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                        {% elif top_10[4].cont_tempo > 500 %}
+                                        <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                        {% elif top_10[4].cont_tempo > 250 %}
+                                        <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                        {% else %}
+                                        <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                        {% endif %}
+                                    </td>
+                                    <td>{{top_10[4].cont_tempo_str }}</td>
+                                </tr>
+                                <!-- sexta posição -->
+                                <tr>
+                                    <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ top_10[5].registro}} -
+                                        {{top_10[5].username}} <strong>{{top_10[5].sobrenome}}</strong></td>
+                                    <td>
+                                        {% if top_10[5].cont_tempo > 3000 %}
+                                        <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                        {% elif top_10[5].cont_tempo > 2000 %}
+                                        <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                        {% elif top_10[5].cont_tempo > 1000 %}
+                                        <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                        {% elif top_10[5].cont_tempo > 500 %}
+                                        <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                        {% elif top_10[5].cont_tempo > 250 %}
+                                        <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                        {% else %}
+                                        <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                        {% endif %}
+                                    </td>
+                                    <td>{{top_10[5].cont_tempo_str }}</td>
+                                </tr>
+                                <!-- 7 posição -->
+                                <tr>
+                                    <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ top_10[6].registro}} -
+                                        {{top_10[6].username}} <strong>{{top_10[6].sobrenome}}</strong></td>
+                                    <td>
+                                        {% if top_10[6].cont_tempo > 3000 %}
+                                        <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                        {% elif top_10[6].cont_tempo > 2000 %}
+                                        <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                        {% elif top_10[6].cont_tempo > 1000 %}
+                                        <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                        {% elif top_10[6].cont_tempo > 500 %}
+                                        <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                        {% elif top_10[6].cont_tempo > 250 %}
+                                        <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                        {% else %}
+                                        <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                        {% endif %}
+                                    </td>
+                                    <td>{{top_10[6].cont_tempo_str }}</td>
+                                </tr>
+                                <!-- 8 posição -->
+                                <tr>
+                                    <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ top_10[7].registro}} -
+                                        {{top_10[7].username}} <strong>{{top_10[7].sobrenome}}</strong></td>
+                                    <td>
+                                        {% if top_10[7].cont_tempo > 3000 %}
+                                        <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                        {% elif top_10[7].cont_tempo > 2000 %}
+                                        <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                        {% elif top_10[7].cont_tempo > 1000 %}
+                                        <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                        {% elif top_10[7].cont_tempo > 500 %}
+                                        <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                        {% elif top_10[7].cont_tempo > 250 %}
+                                        <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                        {% else %}
+                                        <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                        {% endif %}
+                                    </td>
+                                    <td>{{top_10[7].cont_tempo_str }}</td>
+                                </tr>
+                                <!-- 9 posição -->
+                                <tr>
+                                    <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ top_10[8].registro}} -
+                                        {{top_10[8].username}} <strong>{{top_10[8].sobrenome}}</strong></td>
+                                    <td>
+                                        {% if top_10[8].cont_tempo > 3000 %}
+                                        <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                        {% elif top_10[8].cont_tempo > 2000 %}
+                                        <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                        {% elif top_10[8].cont_tempo > 1000 %}
+                                        <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                        {% elif top_10[8].cont_tempo > 500 %}
+                                        <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                        {% elif top_10[8].cont_tempo > 250 %}
+                                        <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                        {% else %}
+                                        <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                        {% endif %}
+                                    </td>
+                                    <td>{{top_10[8].cont_tempo_str }}</td>
+                                </tr>
+                                <!-- 10 posição -->
+                                <tr>
+                                    <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ top_10[9].registro}} -
+                                        {{top_10[9].username}} <strong>{{top_10[9].sobrenome}}</strong></td>
+                                    <td>
+                                        {% if top_10[9].cont_tempo > 3000 %}
+                                        <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                        {% elif top_10[9].cont_tempo > 2000 %}
+                                        <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                        {% elif top_10[9].cont_tempo > 1000 %}
+                                        <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                        {% elif top_10[9].cont_tempo > 500 %}
+                                        <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                        {% elif top_10[9].cont_tempo > 250 %}
+                                        <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                        {% else %}
+                                        <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                        {% endif %}
+                                    </td>
+                                    <td>{{top_10[9].cont_tempo_str }}</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                {{form.ifcomunity(class="form-control", placeholder="Exemplo: Santos_Dumont_IFAB")}}
-            </div>            
+            </div>
         </div>
-        <div class="form-group">
-            <label for="">Biografia</label>
-            {{form.sobremim(class="form-control")}}            
+        <div class="col-sm">
+            <div class="card text-white md=3" style="background-color:  #7abecc; margin-top: 40px;">
+                <div class="card-header text-center">
+                    <h5>Voos realizados</h5>
+                </div>
+
+                <div>
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Piloto</th>
+                                <th>Patente</th>
+                                <th>Voos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Primeira posição -->
+                            <tr>
+                                <td><i class="fas fa-trophy fa-1x  ouro" style="color: #daa520;"></i> {{ users_top_voo[0].registro}} -
+                                    {{users_top_voo[0].username}} <strong>{{users_top_voo[0].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users_top_voo[0].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users_top_voo[0].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users_top_voo[0].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users_top_voo[0].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users_top_voo[0].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users_top_voo[0].cont_voo}}</td>
+                            </tr>
+                            <!-- segunda posição -->
+                            <tr>
+                                <td><i class="fas fa-trophy fa-1x" style="color: #c0c0c0;"></i> {{ users_top_voo[1].registro}} -
+                                    {{users_top_voo[1].username}} <strong>{{users_top_voo[1].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users_top_voo[1].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users_top_voo[1].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users_top_voo[1].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users_top_voo[1].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users_top_voo[1].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{ users_top_voo[1].cont_voo }}</td>
+                            </tr>
+                            <!-- terceira posição -->
+                            <tr>
+                                <td><i class="fas fa-trophy fa-1x" style="color: #cd7f32;"></i> {{ users_top_voo[2].registro}} -
+                                    {{users_top_voo[2].username}} <strong>{{users_top_voo[2].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users_top_voo[2].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users_top_voo[2].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users_top_voo[2].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users_top_voo[2].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users_top_voo[2].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users_top_voo[2].cont_voo }}</td>
+                            </tr>
+
+                            <!-- quarta posição -->
+                            <tr>
+                                <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ users_top_voo[3].registro}} -
+                                    {{users_top_voo[3].username}} <strong>{{users_top_voo[3].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users_top_voo[3].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users_top_voo[3].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users_top_voo[3].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users_top_voo[3].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users_top_voo[3].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users_top_voo[3].cont_voo }}</td>
+                            </tr>
+                            <!-- quinta posição -->
+                            <tr>
+                                <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ users_top_voo[4].registro}} -
+                                    {{users_top_voo[4].username}} <strong>{{users_top_voo[4].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users_top_voo[4].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users_top_voo[4].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users_top_voo[4].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users_top_voo[4].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users_top_voo[4].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users_top_voo[4].cont_voo }}</td>
+                            </tr>
+                            <!-- sexta posição -->
+                            <tr>
+                                <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ users_top_voo[5].registro}} -
+                                    {{users_top_voo[5].username}} <strong>{{users_top_voo[5].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users_top_voo[5].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users_top_voo[5].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users_top_voo[5].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users_top_voo[5].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users_top_voo[5].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users_top_voo[5].cont_voo }}</td>
+                            </tr>
+                            <!-- 7 posição -->
+                            <tr>
+                                <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ users_top_voo[6].registro}} -
+                                    {{users_top_voo[6].username}} <strong>{{users_top_voo[6].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users_top_voo[6].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users_top_voo[6].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users_top_voo[6].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users_top_voo[6].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users_top_voo[6].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users_top_voo[6].cont_voo }}</td>
+                            </tr>
+                            <!-- 8 posição -->
+                            <tr>
+                                <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ users_top_voo[7].registro}} -
+                                    {{users_top_voo[7].username}} <strong>{{users_top_voo[7].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users_top_voo[7].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users_top_voo[7].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users_top_voo[7].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users_top_voo[7].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users_top_voo[7].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users_top_voo[7].cont_voo}}</td>
+                            </tr>
+                            <!-- 9 posição -->
+                            <tr>
+                                <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ users_top_voo[8].registro}} -
+                                    {{users_top_voo[8].username}} <strong>{{users_top_voo[8].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users_top_voo[8].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users_top_voo[8].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users_top_voo[8].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users_top_voo[8].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users_top_voo[8].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users_top_voo[8].cont_voo }}</td>
+                            </tr>
+                            <!-- 10 posição -->
+                            <tr>
+                                <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ users_top_voo[9].registro}} -
+                                    {{users_top_voo[9].username}} <strong>{{users_top_voo[9].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users_top_voo[9].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users_top_voo[9].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users_top_voo[9].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users_top_voo[9].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users_top_voo[9].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users_top_voo[9].cont_voo }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="">Base</label>
-            {{form.base(class="form-control", placeholder="Exemplo: SBGL")}}            
+        <div class="col-sm" style="margin-top: 40px;">
+            <div class="card text-white md=3" style="background-color:  #7cd1c0;">
+                <div>
+                    <div class="card-header text-center" >
+                        <h5>Pontuação </h5>
+                    </div>                    
+                    <div>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Piloto</th>
+                                    <th>Patente</th>
+                                    <th>Pontos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Primeira posição -->
+                            <tr>
+                                <td><i class="fas fa-trophy fa-1x  ouro" style="color: #daa520;"></i> {{users[0].registro}} -
+                                    {{users[0].username}} <strong>{{users[0].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users[0].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users[0].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users[0].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users[0].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users[0].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users[0].pontos}}</td>
+                            </tr>
+                            <!-- segunda posição -->
+                            <tr>
+                                <td><i class="fas fa-trophy fa-1x" style="color: #c0c0c0;"></i> {{ users[1].registro}} -
+                                    {{users[1].username}} <strong>{{users[1].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users[1].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users[1].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users[1].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users[1].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users[1].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{ users[1].pontos}}</td>
+                            </tr>
+                            <!-- terceira posição -->
+                            <tr>
+                                <td><i class="fas fa-trophy fa-1x" style="color: #cd7f32;"></i> {{ users[2].registro}} -
+                                    {{users[2].username}} <strong>{{users[2].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users[2].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users[2].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users[2].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users[2].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users[2].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users[2].pontos }}</td>
+                            </tr>
+
+                            <!-- quarta posição -->
+                            <tr>
+                                <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ users[3].registro}} -
+                                    {{users[3].username}} <strong>{{users[3].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users[3].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users[3].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users[3].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users[3].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users[3].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users[3].pontos }}</td>
+                            </tr>
+                            <!-- quinta posição -->
+                            <tr>
+                                <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ users[4].registro}} -
+                                    {{users[4].username}} <strong>{{users[4].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users[4].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users[4].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users[4].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users[4].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users[4].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users[4].pontos }}</td>
+                            </tr>
+                            <!-- sexta posição -->
+                            <tr>
+                                <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ users[5].registro}} -
+                                    {{users[5].username}} <strong>{{users[5].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users[5].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users[5].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users[5].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users[5].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users[5].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users[5].pontos }}</td>
+                            </tr>
+                            <!-- 7 posição -->
+                            <tr>
+                                <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ users[6].registro}} -
+                                    {{users[6].username}} <strong>{{users[6].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users[6].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users[6].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users[6].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users[6].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users[6].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users[6].pontos }}</td>
+                            </tr>
+                            <!-- 8 posição -->
+                            <tr>
+                                <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ users[7].registro}} -
+                                    {{users[7].username}} <strong>{{users[7].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users[7].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users[7].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users[7].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users[7].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users[7].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users[7].pontos}}</td>
+                            </tr>
+                            <!-- 9 posição -->
+                            <tr>
+                                <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ users[8].registro}} -
+                                    {{users[8].username}} <strong>{{users[8].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users[8].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users[8].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users[8].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users[8].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users[8].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users[8].pontos }}</td>
+                            </tr>
+                            <!-- 10 posição -->
+                            <tr>
+                                <td><i class="fas fa-arrow-up fa-1x seta"></i> {{ users[9].registro}} -
+                                    {{users[9].username}} <strong>{{users[9].sobrenome}}</strong></td>
+                                <td>
+                                    {% if users[9].cont_tempo > 3000 %}
+                                    <img src="../static/img/patente/CMM.png" alt="" width="80px">
+                                    {% elif users[9].cont_tempo > 2000 %}
+                                    <img src="../static/img/patente/CMD.png" alt="" width="80px">
+                                    {% elif users[9].cont_tempo > 1000 %}
+                                    <img src="../static/img/patente/POF2.png" alt="" width="80px">
+                                    {% elif users[9].cont_tempo > 500 %}
+                                    <img src="../static/img/patente/POF.png" alt="" width="80px">
+                                    {% elif users[9].cont_tempo > 250 %}
+                                    <img src="../static/img/patente/COP2.png" alt="" width="80px">
+                                    {% else %}
+                                    <img src="../static/img/patente/COP.png" alt="" width="80px">
+                                    {% endif %}
+                                </td>
+                                <td>{{users[9].pontos }}</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="">Telefone</label>
-            {{form.telefone(class="form-control", placeholder="(00) 99999-9999")}}            
-        </div>
-        <div class="form-group">
-            <label for="">Grade</label>
-            {{form.grau(class="form-control")}}            
-        </div>
-        <div class="form-group">
-            <label for="">Localidade</label>
-            {{form.pais(class="form-control")}}            
-        </div>
-        {{form.submit(class="btn btn-primary")}}
-    </form>
+    </div>
 </div>
 
-    
 {% endblock %}
