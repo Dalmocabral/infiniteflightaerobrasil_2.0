@@ -29,13 +29,13 @@
     {% if user.data_create %}<p>Ultima visitar: {{ user.data_create.strftime('%d/%m/%Y') }}</p>{% endif %}    
   </div>      
   <br>
-  <div>
-    <table class="table table-sm table-striped text-center ">
+  <div class="table-responsive" style="font-size: 12px;">
+    <table class="table table-sm table-striped">
       <thead>
         <tr class="table-active"></tr>
             <th>Saida</th>
             <th>Chegada</th>
-            <th>Voo</th>
+            <th>Voo #</th>
             <th>Aeronave</th>
             <th>Tempo</th>
             <th>Data</th> 
@@ -44,11 +44,11 @@
       <tbody>
           {% for log in log %}
           <tr>
-              <td>{{log.saida}}</td>
-              <td>{{log.chegada}}</td>
-              <td>{{log.voo}}</td>
+              <td><i class="fas fa-map-marker-alt"></i> {{log.saida}}</td>
+              <td><i class="fas fa-map-marker-alt"></i> {{log.chegada}}</td>
+              <td><i class="fa fa-plane fa-rotate-270"></i> {{log.voo}}</td>
               <td>{{log.aeronave}}</td>
-              <td>{{log.tempo}}</td>
+              <td><i class="fas fa-clock"></i> {{log.tempo}}</td>
               <td>{{log.data_create.strftime('%d/%m/%Y')}}</td>              
           </tr>
           {% endfor %}

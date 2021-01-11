@@ -2,7 +2,7 @@ from flask_wtf import FlaskForm
 from wtforms import BooleanField, PasswordField, StringField, SubmitField, TextAreaField, SelectField
 from wtforms.validators import DataRequired, Email, Length, EqualTo, ValidationError, email
 from wtforms.fields.html5 import TimeField
-from flask_wtf.file import FileField
+from flask_wtf.file import FileField, FileRequired
 from app.models import User
 
 
@@ -307,6 +307,6 @@ class LogbookForm(FlaskForm):
     ])
     voo = StringField('Voo', validators=[DataRequired()])
     tempo = TimeField('Tempo Total',  validators=[DataRequired('O campo e obrigatório')])    
-    photo = FileField('Print logbook')
+    photo = FileField('Imagem do seu logbook', validators=[FileRequired()])
     submit = SubmitField('Enviar')
 
