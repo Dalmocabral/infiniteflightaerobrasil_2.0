@@ -14,12 +14,12 @@ class Config(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     # Configuração Flask-Admin tema
-    FLASK_ADMIN_SWATCH = 'Darkly'
+    FLASK_ADMIN_SWATCH = 'lumen'
     
     MAIL_SENDER=''
-    MAIL_SERVER=''
-    MAIL_PORT=2525
-    MAIL_USERNAME=''
-    MAIL_PASSWORD=''
+    MAIL_SERVER='mtp.googlemail.com'
+    MAIL_PORT=587
+    MAIL_USERNAME='dalmo.santos.cabral'
+    MAIL_PASSWORD='aretha160491'
     MAIL_USE_TLS=True
     MAIL_USE_SSL=False

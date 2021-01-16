@@ -108,7 +108,6 @@ def user(id):
 
 
 @app.route("/recuperar-senha", methods=["GET", "POST"])
-@login_required
 def forgot_password():
     form = ForgotPasswordForm()
 

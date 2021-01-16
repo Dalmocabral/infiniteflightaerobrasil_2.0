@@ -24,8 +24,7 @@ migrate = Migrate(app, db)
 login_manager = LoginManager(app)
 bootstrap = Bootstrap(app)
 admin = Admin(app, name='My admin name', template_mode='bootstrap3')
-app.config['UPLOADED_IMAGES_DEST'] = 'uploads/imagem'
-app.config['FLASK_ADMIN_SWATCH'] = 'lumen'
+app.config['UPLOADED_IMAGES_DEST'] = 'uploads/imagem' 
 images = UploadSet('images', IMAGES)
 configure_uploads(app, images)
 

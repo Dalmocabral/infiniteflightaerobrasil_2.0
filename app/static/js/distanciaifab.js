@@ -1,0 +1,1 @@
+const  distancia = 'teste de distancia'; 
