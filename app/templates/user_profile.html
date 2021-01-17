@@ -10,17 +10,9 @@
     <img src="{{ user.avatar(128) }}">     
     <h1>{{ user.username }} {{ user.sobrenome}}</h1>
     {% if va > 3000 %}
-      <img src="../static/img/patente/CMM.png" alt=""  width="250px">
-    {% elif va > 2000 %}
-      <img src="../static/img/patente/CMD.png" alt="" width="250px">
-    {% elif va > 1000 %}
-      <img src="../static/img/patente/POF2.png" alt="" width="250px">
-    {% elif va > 500 %}
-      <img src="../static/img/patente/POF.png" alt=""  width="250px">
-    {% elif va > 250 %}
-      <img src="../static/img/patente/COP2.png" alt="" width="250px">
+      <img src="../static/img/patente/CMD.png" alt=""  width="250px">    
     {% else %}
-      <img src="../static/img/patente/COP.png" alt="" width="250px">
+      <img src="../static/img/patente/COP2.png" alt="" width="250px">
     {% endif %}
     <br> 
     <br>   

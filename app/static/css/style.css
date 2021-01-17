@@ -107,7 +107,7 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    background: url('../img/backgrund_video/WhatsApp-Image-2021-01-17-at-17.gif') black no-repeat center center scroll;
   }
   header video {
     display: none;

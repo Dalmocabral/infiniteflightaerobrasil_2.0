@@ -33,17 +33,9 @@
                     {% endif %} 
                     <td>
                         {% if users.cont_tempo > 3000 %}
-                        <img src="../static/img/patente/CMM.png" alt=""  width="60px">
-                      {% elif users.cont_tempo > 2000 %}
-                        <img src="../static/img/patente/CMD.png" alt="" width="60px">
-                      {% elif users.cont_tempo > 1000 %}
-                        <img src="../static/img/patente/POF2.png" alt="" width="60px">
-                      {% elif users.cont_tempo > 500 %}
-                        <img src="../static/img/patente/POF.png" alt=""  width="60px">
-                      {% elif users.cont_tempo > 250 %}
-                        <img src="../static/img/patente/COP2.png" alt="" width="60px">
+                        <img src="../static/img/patente/CMD.png" alt=""  width="60px">                      
                       {% else %}
-                        <img src="../static/img/patente/COP.png" alt="" width="60px">
+                        <img src="../static/img/patente/COP2.png" alt="" width="60px">
                       {% endif %}
                     </td>
                     <td>{{users.cont_voo}}</td>

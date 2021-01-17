@@ -153,11 +153,11 @@
 
         if (user == 'Gabriel_f' || user == 'Retr0' || user == 'maverick_brasil' || user == 'Andre_Siqueira2' || user == 'Dalmo_Cabral') {
          
-          marker = L.marker([lat, long], { icon: aircraft_3, rotationAngle: hdg }).bindTooltip( cal, {  permanent : true, color :"#f00", radius: 12, opacity: 0.5 }).addTo(layerGroup)
+          marker = L.marker([lat, long], { icon: aircraft_3, rotationAngle: hdg }).bindTooltip( cal, {  permanent : true, color :"#f00", radius: 12,direction: 'auto'}).addTo(layerGroup)
           marker.bindPopup("<span style='font-size:17px;color:#6495ed'>IFAB " + user + " <i class='fa fa-star'></i></span><br><span style='font-size:14px;color:#999'>Voo: " + cal + "</span><br><span style='font-size:14px;color:#999'>Alt: " + Math.trunc(alt) + " fts </span><br><span style='font-size:14px;color:#999'>Vel: " + Math.trunc(vel) + ' kts </span>');
 
         } else {
-          marker = L.marker([lat, long], { icon: aircraft, rotationAngle: hdg }).bindTooltip( cal, {  permanent : true, color :"#f00", radius: 12, direction: 'auto' }).addTo(layerGroup)
+          marker = L.marker([lat, long], { icon: aircraft, rotationAngle: hdg }).bindTooltip( cal, {  permanent : true, color :"#f00", radius: 12, direction: 'auto'}).addTo(layerGroup)
           marker.bindPopup("<span style='font-size:17px;'>IFAB " + user + "</span><br><span style='font-size:14px;color:#999'>Voo: " + cal + "</span><br><span style='font-size:14px;color:#999'>Alt: " + Math.trunc(alt) + " fts </span><br><span style='font-size:14px;color:#999'>Vel: " + Math.trunc(vel) + ' kts </span>');
 
 
